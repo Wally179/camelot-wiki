@@ -1,0 +1,658 @@
+{
+  "casas": [
+    {
+      "id": "cador",
+      "nome": "Clã Cador",
+      "especialidade": "A Cavalaria Purista",
+      "simbolo": "Um sol de prata brilhante a perfurar um crânio demoníaco.",
+      "lema": "Luz pura, sangue limpo.",
+      "valores": ["Devoção", "Ordem Rigorosa", "Supremacia Humana"],
+      "historia": "Fanáticos religiosos remanescentes de cruzadas antigas. Veem a magia não-humana como uma mácula e o Véu como um presente divino exclusivo da humanidade.",
+      "base": {
+        "fortaleza": "Cidadela da Alvorada",
+        "peculiaridadeCultural": "Queimam efígies de monstros e fadas em praça pública toda sexta-feira à noite como evento familiar."
+      },
+      "demografia": {
+        "populacao": 8000000,
+        "taxaMortalidade": "Baixa (vivem nas terras centrais seguras)",
+        "dinamicaPopulacional": "A maior população de Camelot. Crescimento estável focado na agricultura e na alta taxa de natalidade entre os camponeses."
+      },
+      "militar": {
+        "tamanhoExercito": "2.000.000 soldados",
+        "estiloCombate": "Cargas de cavalaria devastadoras e formações em falange blindadas."
+      },
+      "economia": {
+        "renda": "Tributos de proteção e vasta produção agrícola.",
+        "produtos": [
+          "Cavalos puro-sangue",
+          "Cereais",
+          "Armaduras banhadas a prata"
+        ]
+      },
+      "politica": {
+        "aliancas": ["Agem maioritariamente sozinhos"],
+        "adversarios": ["Clã Morholt", "Filhos de Ogham", "Fadas"],
+        "conflitosAtuais": "Rumores apontam movimentações militares não autorizadas nas bordas das florestas. A tensão com os guetos mutantes atingiu um ponto de ruptura, mas as verdadeiras intenções do clã continuam ocultas."
+      },
+      "personagensImportantes": [
+        {
+          "id": "nuada",
+          "nome": "Nuada",
+          "titulo": "O Braço de Prata (Líder)",
+          "papel": "O cavaleiro fanático que governa com mão de ferro.",
+          "idade": 48,
+          "raca": "Humano",
+          "classe": "Paladino / Cavaleiro",
+          "arma": "A Mão de Prata (Prótese de cristal e prata que conjura uma lâmina sagrada)",
+          "poderesNativos": "Luz Inquisitorial: Queima a corrupção, demônios, fadas e mutantes com radiação de Ardan purificada, cegando os inimigos em área.",
+          "comportamento": "Fanático, orgulhoso e intolerante. Nuada tem uma postura ereta, o queixo sempre erguido com desdém e não tolera ser interrompido. A dor fantasma do braço amputado deixa-o perpetuamente mal-humorado e propenso a explosões de fúria justiceira."
+        },
+        {
+          "id": "diarmuid",
+          "nome": "Diarmuid",
+          "titulo": "O Escudo do Sol (Paladino)",
+          "papel": "Filho adotivo de Nuada. O guerreiro mais honrado e inspirador de Camelot."
+        },
+        {
+          "id": "cairbre",
+          "nome": "Cairbre",
+          "titulo": "O Inquisidor (Capitão da Patrulha)",
+          "papel": "O cão de caça de Nuada. Frio, dogmático e encarregado de caçar ameaças mágicas."
+        },
+        {
+          "id": "etain",
+          "nome": "Étaín",
+          "titulo": "A Dama de Prata (Sacerdotisa)",
+          "papel": "Líder espiritual responsável por abençoar as tropas."
+        }
+      ]
+    },
+    {
+      "id": "morholt",
+      "nome": "Clã Morholt",
+      "especialidade": "Os Mutantes",
+      "simbolo": "Um corvo de três olhos com uma asa quebrada, gotejando fumo.",
+      "lema": "Sobreviver para vingar.",
+      "valores": ["Lealdade à Matilha", "Resiliência", "Abraçar as Sombras"],
+      "historia": "Congregação de bastardos, meio-demônios e marcados pela magia, unidos pela sobrevivência e rejeitados por todas as outras casas.",
+      "base": {
+        "fortaleza": "Os Guetos de Fumaça (Caer Mór)",
+        "peculiaridadeCultural": "Cremam seus mortos em piras mágicas verdes para não deixarem rastros que os Puristas possam usar."
+      },
+      "demografia": {
+        "populacao": 7500000,
+        "taxaMortalidade": "Altíssima (Fome, mutações falhas e expurgos)",
+        "dinamicaPopulacional": "É a população que mais morre, mas a que mais cresce devido ao fluxo massivo de refugiados de todas as casas."
+      },
+      "militar": {
+        "tamanhoExercito": "1.200.000 guerreiros não-regulares",
+        "estiloCombate": "Táticas de guerrilha, terror psicológico e uso das próprias mutações como armas biológicas."
+      },
+      "economia": {
+        "renda": "Trabalhos sujos e missões de alto risco.",
+        "produtos": [
+          "Mercenários",
+          "Especialistas em infiltração",
+          "Contrabando feérico"
+        ]
+      },
+      "politica": {
+        "aliancas": ["A Coroa (proteção oficial em troca de missões)"],
+        "adversarios": ["Clã Cador"],
+        "conflitosAtuais": "A população dos guetos cresceu inexplicavelmente nos últimos meses. Há sussurros de que estão a esconder algo — ou alguém — que poderia provocar a fúria definitiva das outras Casas."
+      },
+      "personagensImportantes": [
+        {
+          "id": "morrigan",
+          "nome": "Morrigan",
+          "titulo": "A Rainha Fantasma (Líder)",
+          "papel": "Guerreira letal que abriga os rejeitados. O coração endurecido dos Guetos.",
+          "idade": 35,
+          "raca": "Sulfure (Meio-Demônio)",
+          "classe": "Guerreira / Bárbara",
+          "arma": "As Três Penas (Três espadas negras flutuantes controladas telepaticamente)",
+          "poderesNativos": "Avatar da Chacina: Capacidade de intangibilidade temporária. Transforma-se num enxame de corvos espectrais para evitar danos físicos e reaparece para golpes letais.",
+          "comportamento": "Sombria, protetora implacável e melancólica. Não tem modos nobres; senta-se de forma curvada e os seus olhos parecem estar sempre a julgar quem se aproxima. Sorri apenas de forma sádica quando está prestes a matar os que ameaçam os seus."
+        },
+        {
+          "id": "balor",
+          "nome": "Balor",
+          "titulo": "O Olho da Ruína (Campeão)",
+          "papel": "Brutamontes gentil com um olho mutante que incinera o que olha diretamente."
+        },
+        {
+          "id": "niamh",
+          "nome": "Niamh",
+          "titulo": "A Passante (Infiltradora)",
+          "papel": "Espiã do clã. Mutação interna (sangue ácido) que lhe permite passar por humana comum."
+        },
+        {
+          "id": "conall",
+          "nome": "Conall",
+          "titulo": "O Arquivista de Cicatrizes (Ancião)",
+          "papel": "Contador de histórias cego que memoriza as linhagens acolhidas."
+        }
+      ]
+    },
+    {
+      "id": "dughall",
+      "nome": "Clã Dùghall",
+      "especialidade": "Os Mineradores",
+      "simbolo": "Uma picareta de ouro encravada numa montanha que sangra rubis.",
+      "lema": "O peso do ouro dita a lei.",
+      "valores": ["Ambição", "Monopólio", "Pragmatismo"],
+      "historia": "Originalmente escavadores humildes, enriqueceram ao descobrir os maiores veios de Cristal de Ardan. Ergueram um império financeiro eliminando rivais.",
+      "base": {
+        "fortaleza": "Abismo de Ouro (Cofre Subterrâneo)",
+        "peculiaridadeCultural": "O status de um nobre é medido pela quantidade de quilos de joias que ele consegue vestir sem desabar no chão."
+      },
+      "demografia": {
+        "populacao": 7000000,
+        "taxaMortalidade": "Alta (Acidentes de mina e Praga de Ardan)",
+        "dinamicaPopulacional": "Repõem sua força de trabalho comprando prisioneiros de guerra ou endividados."
+      },
+      "militar": {
+        "tamanhoExercito": "800.000 mercenários",
+        "estiloCombate": "Combate pesado corpo-a-corpo usando gravidade artificial."
+      },
+      "economia": {
+        "renda": "Monopólio da extração de Cristais de Ardan brutos.",
+        "produtos": ["Cristais de Ardan", "Ouro", "Gemas raras"]
+      },
+      "politica": {
+        "aliancas": ["Clã Nechtan"],
+        "adversarios": ["Filhos de Ogham", "Clã Gofannon"],
+        "conflitosAtuais": "O fluxo de Cristais de Ardan tem oscilado. Há uma clara insatisfação financeira com a Coroa, e boatos de que o clã se prepara para usar a sua riqueza como uma arma política silenciosa."
+      },
+      "personagensImportantes": [
+        {
+          "id": "dagda",
+          "nome": "Dagda",
+          "titulo": "O Pai de Todos (Líder)",
+          "papel": "Lorde obeso e apático que controla o monopólio do cristal.",
+          "idade": 65,
+          "raca": "Humano (Tocado pela Magia)",
+          "classe": "Nobre / Guerreiro",
+          "arma": "O Caldeirão (Clava colossal de Cristal Marrom)",
+          "poderesNativos": "Manipulação Gravitacional: Consegue criar campos de gravidade esmagadores, dobrando o peso de exércitos no solo, ou tornar a si mesmo leve o suficiente para saltar distâncias absurdas.",
+          "comportamento": "Apático, cínico e indulgente. Passa a maior parte do tempo a comer ou a dormir durante as reuniões políticas. Trata todos como subordinados ou crianças irrequietas, confiando no peso absoluto do seu ouro e da sua força bruta."
+        },
+        {
+          "id": "bres",
+          "nome": "Bres",
+          "titulo": "A Mão de Ouro (Herdeira)",
+          "papel": "Chefe das Operações Comerciais. Estrategista fria e implacável."
+        },
+        {
+          "id": "crom-cruach",
+          "nome": "Crom Cruach",
+          "titulo": "O Quebra-Pedras (Capitão da Guarda)",
+          "papel": "Colossal ex-escravo que conquistou liberdade esmagando rebeliões."
+        },
+        {
+          "id": "elatha",
+          "nome": "Elatha",
+          "titulo": "O Bastardo de Poeira (Corretor das Sombras)",
+          "papel": "Filho ilegítimo de Dagda, escondido nas minas mais profundas."
+        }
+      ]
+    },
+    {
+      "id": "gofannon",
+      "nome": "Clã Gofannon",
+      "especialidade": "Os Ferreiros",
+      "simbolo": "Um martelo de ferro negro a bater numa bigorna em chamas azuis.",
+      "lema": "O aço nunca mente.",
+      "valores": ["Honra pela Forja", "Progresso Tecnológico", "Força"],
+      "historia": "Desenvolveram a técnica de fundir pó de Ardan ao aço, tornando-se indispensáveis militarmente para a sobrevivência do reino.",
+      "base": {
+        "fortaleza": "A Grande Fornalha (Caer Gof)",
+        "peculiaridadeCultural": "Quando um soldado morre, a sua arma é derretida e o metal misturado na próxima forja."
+      },
+      "demografia": {
+        "populacao": 5500000,
+        "taxaMortalidade": "Média (Doenças pulmonares e acidentes industriais)",
+        "dinamicaPopulacional": "População urbana espremida em cidades-fábricas industriais que nunca dormem."
+      },
+      "militar": {
+        "tamanhoExercito": "900.000 soldados blindados",
+        "estiloCombate": "Infantaria superpesada com maquinário tecnológico-mágico e lança-chamas."
+      },
+      "economia": {
+        "renda": "Venda de armamento de elite.",
+        "produtos": ["Armas de Ardan", "Armaduras mecanizadas", "Balistas"]
+      },
+      "politica": {
+        "aliancas": ["A Coroa", "Clã Llyr"],
+        "adversarios": ["Clã Dùghall"],
+        "conflitosAtuais": "As forjas operam a um ritmo febril, produzindo muito além da cota exigida pela Coroa. Suspeita-se de que estão a preparar-se para um grande conflito, ou a armar uma fação desconhecida."
+      },
+      "personagensImportantes": [
+        {
+          "id": "lugh",
+          "nome": "Lugh",
+          "titulo": "O Radiante (Líder)",
+          "papel": "Lorde carismático, brilhante e ambicioso. Mestre da diplomacia.",
+          "idade": 42,
+          "raca": "Humano",
+          "classe": "Inventor / Guerreiro",
+          "arma": "A Lança de Assal (Dardo Incandescente de puro Cristal de Ardan)",
+          "poderesNativos": "Quebra-Feitiços e Visão Arcana: Vê as linhas de energia da magia e consegue desfazer ilusões, barreiras e encantamentos encostando a ponta da lança.",
+          "comportamento": "Encantador, extrovertido e um sociopata funcional. Sorri com facilidade, lembra-se do nome de todos e dá abraços calorosos. Por trás desse brilho, é a mente mais calculista e capitalista do arquipélago."
+        },
+        {
+          "id": "brigid",
+          "nome": "Brigid",
+          "titulo": "A Forja-Viva (Mestra Ferreira)",
+          "papel": "Irmã de Lugh. A maior forjadora de espadas de Camelot."
+        },
+        {
+          "id": "goibniu",
+          "nome": "Goibniu",
+          "titulo": "O Fole de Ferro (Engenheiro)",
+          "papel": "Veterano de guerra encarregado da artilharia e maquinário pesado."
+        },
+        {
+          "id": "creidhne",
+          "nome": "Creidhne",
+          "titulo": "A Faísca (Especialista em Explosivos)",
+          "papel": "Jovem prodígio responsável por fundir pó de cristal com pólvora."
+        }
+      ]
+    },
+    {
+      "id": "llyr",
+      "nome": "Clã Llyr",
+      "especialidade": "Senhores da Maré",
+      "simbolo": "Uma onda encapelada quebrando contra um tridente de osso.",
+      "lema": "O mar engole os fracos.",
+      "valores": ["Disciplina", "Sacrifício", "Resistência"],
+      "historia": "Guardiões costeiros contra leviathans e horrores abissais que cruzam o Véu oscilante.",
+      "base": {
+        "fortaleza": "Torreões de Sal",
+        "peculiaridadeCultural": "Bebem água do mar diluída em rum para nunca esquecerem a dor do oceano."
+      },
+      "demografia": {
+        "populacao": 4500000,
+        "taxaMortalidade": "Alta (Vítimas de leviathans e afogamentos)",
+        "dinamicaPopulacional": "Estagnada. Os jovens morrem rápido na patrulha naval antes de formar famílias."
+      },
+      "militar": {
+        "tamanhoExercito": "1.000.000 fuzileiros navais",
+        "estiloCombate": "Guerra anfíbia, arpões colossais e afogamento tático de frotas."
+      },
+      "economia": {
+        "renda": "Controle de portos e rotas marítimas internas.",
+        "produtos": ["Pérolas abissais", "Sal mágico", "Carne de Leviathan"]
+      },
+      "politica": {
+        "aliancas": ["Clã Gofannon"],
+        "adversarios": ["Coroa (por abandono econômico)"],
+        "conflitosAtuais": "A comunicação com as bases costeiras está cada vez mais hostil. Mensageiros da Coroa são frequentemente ignorados, e a insubordinação parece estar prestes a explodir nas praias."
+      },
+      "personagensImportantes": [
+        {
+          "id": "manannan",
+          "nome": "Manannán",
+          "titulo": "O Senhor das Marés (Líder)",
+          "papel": "Almirante estoico da costa.",
+          "idade": 55,
+          "raca": "Ondine (Tocado pelas Águas)",
+          "classe": "Bucaneiro / Guerreiro",
+          "arma": "Cortadora de Ondas (Foice Azul encharcada)",
+          "poderesNativos": "Transmutação Fluida: Consegue transformar o seu corpo e arma em água ou névoa, tornando-se imune a ataques físicos e afogando inimigos.",
+          "comportamento": "Estoico, direto e profundamente exausto. Tem a voz rouca pela maresia. Não tem paciência para burocracias, diz a verdade nua e crua e ameaça ir embora se começarem a perder tempo."
+        },
+        {
+          "id": "dylan",
+          "nome": "Dylan",
+          "titulo": "O Navegador Cego (Capitão)",
+          "papel": "Jovem capitão venerado por nunca perder um navio."
+        },
+        {
+          "id": "cliodhna",
+          "nome": "Cliodhna",
+          "titulo": "A Cantora da Maré (Maga Aquática)",
+          "papel": "Responsável por conjurar nevoeiros e manipular as marés a favor da frota."
+        },
+        {
+          "id": "lir",
+          "nome": "Lir",
+          "titulo": "O Velho Salgado (Sobrevivente)",
+          "papel": "Veterano que sobreviveu a ser engolido por um Leviathan."
+        }
+      ]
+    },
+    {
+      "id": "artos",
+      "nome": "Clã Artos",
+      "especialidade": "Domadores de Feras",
+      "simbolo": "Uma garra de urso cravada num cristal âmbar.",
+      "lema": "A carne rasga, o instinto prevalece.",
+      "valores": ["Lei do mais Forte", "Liberdade Selvagem", "Predação"],
+      "historia": "Bárbaros que fundem cristais em crânios de feras gigantes, criando laços mentais de guerra.",
+      "base": {
+        "fortaleza": "Os Picos de Âmbar (Acampamentos móveis)",
+        "peculiaridadeCultural": "Recém-nascidos são deixados perto dos filhotes das feras; se não forem aceites pela matilha, são descartados."
+      },
+      "demografia": {
+        "populacao": 3500000,
+        "taxaMortalidade": "Média-Alta (Devorados pelas próprias feras se mostrarem fraqueza)",
+        "dinamicaPopulacional": "Tribos nómades. Crescimento lento devido ao clima extremo das montanhas."
+      },
+      "militar": {
+        "tamanhoExercito": "500.000 domadores montados",
+        "estiloCombate": "Cavalaria monstruosa montada em ursos atrozes e lobos gigantes."
+      },
+      "economia": {
+        "renda": "Mercenários para ataques devastadores.",
+        "produtos": ["Feras de guerra", "Peles mágicas", "Carne exótica"]
+      },
+      "politica": {
+        "aliancas": ["Nenhuma permanente"],
+        "adversarios": ["Clã Cador"],
+        "conflitosAtuais": "Incidentes sangrentos nas fronteiras rurais aumentaram drasticamente. Feras enormes têm sido vistas longe das montanhas, levantando dúvidas se é fome natural ou uma tática de intimidação."
+      },
+      "personagensImportantes": [
+        {
+          "id": "artio",
+          "nome": "Artio",
+          "titulo": "A Ursa (Líder)",
+          "papel": "Bárbara alfa, respeita apenas a força bruta.",
+          "idade": 39,
+          "raca": "Humana",
+          "classe": "Bárbara / Caçadora",
+          "arma": "Garras Fósseis (Manoplas de Cristal Âmbar com garras gigantes)",
+          "poderesNativos": "Assimilação Feral: Consegue manifestar a força e a couraça espectral do Grande Urso. As suas feridas fecham-se desde que ela continue a atacar.",
+          "comportamento": "Selvagem, instintiva e de pavio curto. Age mais como uma fera alfa do que como humana. Cheira as pessoas ao conhecê-las, não pisca muito, e resolve 90% dos problemas através de intimidação física e rugidos."
+        },
+        {
+          "id": "kuma",
+          "nome": "Kuma",
+          "titulo": "O Montador de Sangue (Batedor)",
+          "papel": "O mais jovem a domar um urso de Ardan."
+        },
+        {
+          "id": "bjorn",
+          "nome": "Bjorn",
+          "titulo": "O Frenesi (Berserker)",
+          "papel": "A arma de cerco viva do clã, lutando em fúria cega."
+        },
+        {
+          "id": "ursa-mae",
+          "nome": "Ursa",
+          "titulo": "A Mãe da Matilha (Xamã Feral)",
+          "papel": "Responsável por implantar cristais no crânio das feras."
+        }
+      ]
+    },
+    {
+      "id": "ogham",
+      "nome": "Filhos de Ogham",
+      "especialidade": "Os Druidas",
+      "simbolo": "Uma galhada de cervo envolta em raízes espinhosas.",
+      "lema": "A terra cobra o que sangra.",
+      "valores": ["Sacrifício", "Tradições Antigas", "Equilíbrio Natural"],
+      "historia": "Zeladores originais de Camelot antes da chegada do aço. Vivem nas florestas e veem os Cristais como o sangue da ilha.",
+      "base": {
+        "fortaleza": "Bosque das Lâminas de Folha",
+        "peculiaridadeCultural": "Não escrevem nada. A história da tribo é tatuada na pele dos anciãos."
+      },
+      "demografia": {
+        "populacao": 3000000,
+        "taxaMortalidade": "Baixa (possuem magia de cura natural)",
+        "dinamicaPopulacional": "Isolados nas florestas. Recusam estrangeiros agressivamente."
+      },
+      "militar": {
+        "tamanhoExercito": "300.000 xamãs e druidas",
+        "estiloCombate": "Uso de árvores animadas, raízes mortais e tempestades mágicas localizadas."
+      },
+      "economia": {
+        "renda": "Autossustentável (não usam moeda).",
+        "produtos": [
+          "Venenos indetectáveis",
+          "Madeira encantada",
+          "Ervas milagrosas"
+        ]
+      },
+      "politica": {
+        "aliancas": ["Clã Pwyll (acordos ocultos)"],
+        "adversarios": ["Clã Dùghall", "Clã Gofannon"],
+        "conflitosAtuais": "Acidentes estranhos têm paralisado rotas comerciais e escavações. O silêncio da floresta esconde retaliações que muitos consideram ser o início de uma resposta druídica à corrupção da ilha."
+      },
+      "personagensImportantes": [
+        {
+          "id": "cernunnos",
+          "nome": "Cernunnos",
+          "titulo": "O Chifrudo (Líder)",
+          "papel": "O arquidruida tradicionalista e inflexível.",
+          "idade": 70,
+          "raca": "Dahllan (Tocado pela Natureza)",
+          "classe": "Druida",
+          "arma": "Galhada (Lança viva feita de raízes de carvalho e espinhos)",
+          "poderesNativos": "Animismo Sanguíneo: Transforma sangue derramado (seu ou dos inimigos) em raízes asfixiantes e feras de madeira animada que destroem infraestruturas rapidamente.",
+          "comportamento": "Enigmático, distante e triste. Fala sempre em metáforas sobre as estações e o ciclo da vida. Transmite uma sabedoria ancestral, mas com a certeza fanática de um homem que desistiu da civilização."
+        },
+        {
+          "id": "macha",
+          "nome": "Macha",
+          "titulo": "A Semente Púrpura (Xamã)",
+          "papel": "Principal aprendiz de Cernunnos e curandeira."
+        },
+        {
+          "id": "taranis",
+          "nome": "Taranis",
+          "titulo": "O Carvalho de Sangue (Guardião)",
+          "papel": "Executor físico e escudo da tribo."
+        },
+        {
+          "id": "nemetona",
+          "nome": "Nemetona",
+          "titulo": "A Sussurradora (Diplomata)",
+          "papel": "A única druida que transita pelas cidades."
+        }
+      ]
+    },
+    {
+      "id": "pwyll",
+      "nome": "Clã Pwyll",
+      "especialidade": "Os Ilusionistas",
+      "simbolo": "Um olho roxo semiaberto envolto numa névoa em espiral.",
+      "lema": "A verdade é o que nós pintamos.",
+      "valores": ["Astúcia", "Segredo", "Inteligência"],
+      "historia": "Assentados na borda do Véu, desenvolveram magia de ilusão pesada para sobreviver ao contato com as Fadas de Inis Fae.",
+      "base": {
+        "fortaleza": "A Mansão dos Espelhos (Caer Pwyll)",
+        "peculiaridadeCultural": "Mudar de rosto com ilusões por motivos estéticos é tão comum quanto trocar de roupa."
+      },
+      "demografia": {
+        "populacao": 2500000,
+        "taxaMortalidade": "Baixa (evitam o confronto direto)",
+        "dinamicaPopulacional": "Foco em manter uma elite intelectual fechada em vez de grande volume de pessoas."
+      },
+      "militar": {
+        "tamanhoExercito": "100.000 magos espiões e assassinos",
+        "estiloCombate": "Quebram a sanidade do inimigo com ilusões aterradoras antes do combate físico."
+      },
+      "economia": {
+        "renda": "Comércio de informações e espionagem.",
+        "produtos": [
+          "Artefatos de ilusão",
+          "Pergaminhos de hipnose",
+          "Relíquias feéricas"
+        ]
+      },
+      "politica": {
+        "aliancas": ["Filhos de Ogham"],
+        "adversarios": ["Clã Cador"],
+        "conflitosAtuais": "A neblina ao redor dos seus domínios tornou-se impenetrável. Espiões relatam encontros com figuras não-humanas nas suas fronteiras, sugerindo alianças que beiram a alta traição."
+      },
+      "personagensImportantes": [
+        {
+          "id": "rhiannon",
+          "nome": "Rhiannon",
+          "titulo": "A Canção do Pesadelo (Líder)",
+          "papel": "A tecelã de ilusões e mestra dos espiões.",
+          "idade": 999,
+          "raca": "Qareen das Trevas",
+          "classe": "Barda / Arcanista",
+          "arma": "O Canto dos Pássaros (Dois chicotes formados por neblina mágica concentrada)",
+          "poderesNativos": "Aprisionamento Mental: Pode trancar a mente de uma pessoa no seu pior pesadelo através de contato visual prolongado ou ao envolvê-la com os seus chicotes.",
+          "comportamento": "Elegante, misteriosa e ligeiramente desequilibrada. Sorri quando ouve coisas terríveis. Analisa o ambiente de forma paranoica, piscando de forma estranha enquanto tenta processar qual camada da realidade é verdadeira."
+        },
+        {
+          "id": "arawn",
+          "nome": "Arawn",
+          "titulo": "O Homem Sem Rosto (Assassino)",
+          "papel": "A lâmina furtiva capaz de copiar perfeitamente qualquer aparência."
+        },
+        {
+          "id": "blodeuwedd",
+          "nome": "Blodeuwedd",
+          "titulo": "A Flor Ilusória (Diplomata)",
+          "papel": "A face pública e diplomata eloquente da casa."
+        },
+        {
+          "id": "pwyll-anciao",
+          "nome": "Pwyll Pen Annwn",
+          "titulo": "O Ancião (Fundador)",
+          "papel": "Um dos magos mais poderosos de Camelot, avô de Rhiannon."
+        }
+      ]
+    },
+    {
+      "id": "nechtan",
+      "nome": "Clã Nechtan",
+      "especialidade": "Coveiros e Curandeiros",
+      "simbolo": "Um cálice de prata derramando líquido escuro sobre uma caveira.",
+      "lema": "A morte é apenas um diagnóstico.",
+      "valores": ["Conhecimento Irrestrito", "Frieza", "Controle"],
+      "historia": "Únicos anatomistas capazes de tratar a 'Praga de Ardan'. O controlo sobre a cura dá-lhes um poder político aterrador.",
+      "base": {
+        "fortaleza": "O Sanatório Branco",
+        "peculiaridadeCultural": "Ninguém chora em velórios. A morte é vista de forma fria como um 'erro de cálculo biológico'."
+      },
+      "demografia": {
+        "populacao": 1500000,
+        "taxaMortalidade": "Quase zero (controlam a cura)",
+        "dinamicaPopulacional": "A menor casa, composta por médicos geniais e pacientes endinheirados."
+      },
+      "militar": {
+        "tamanhoExercito": "80.000 médicos de combate e experimentos necróticos",
+        "estiloCombate": "Controle do campo através de pragas biológicas e envelhecimento acelerado."
+      },
+      "economia": {
+        "renda": "Tratamentos médicos exorbitantes e chantagem velada.",
+        "produtos": ["Antídotos", "Cirurgias arcanas", "Tratamentos da Praga"]
+      },
+      "politica": {
+        "aliancas": ["Clã Dùghall"],
+        "adversarios": [
+          "Ninguém tem coragem de desafiá-los e arriscar perder a cura."
+        ],
+        "conflitosAtuais": "Remédios essenciais estão repentinamente em falta no mercado, enquanto caravanas pesadas são vistas a entrar no Sanatório Branco à noite. Uma manobra médica está em curso, mas o objetivo é incerto."
+      },
+      "personagensImportantes": [
+        {
+          "id": "dian-cecht",
+          "nome": "Dian Cecht",
+          "titulo": "O Cirurgião Pálido (Líder)",
+          "papel": "O médico chefe, calculista e letal.",
+          "idade": 60,
+          "raca": "Humano",
+          "classe": "Alquimista / Clérigo (Morte)",
+          "arma": "O Bisturi do Fim (Foicinha Leitosa cirúrgica)",
+          "poderesNativos": "Degeneração Celular: Um toque do seu bisturi ou mãos acelera a necrose e o envelhecimento dos tecidos orgânicos instantaneamente, apodrecendo carne viva em segundos.",
+          "comportamento": "Clínico, estéril e totalmente desprovido de empatia. Enxerga os interlocutores apenas como esqueletos embrulhados em carne. Limpa as mãos compulsivamente e tem um tom de voz monótono infinitamente assustador."
+        },
+        {
+          "id": "miach",
+          "nome": "Miach",
+          "titulo": "A Mão Curandeira (Médico Pródigo)",
+          "papel": "Filho do Líder e génio da medicina."
+        },
+        {
+          "id": "airmid",
+          "nome": "Airmid",
+          "titulo": "A Tecelã de Vasos (Alquimista)",
+          "papel": "Irmã de Miach, focada na criação de poções avançadas."
+        },
+        {
+          "id": "tuireann",
+          "nome": "Tuireann",
+          "titulo": "O Preservador (Necromante Teórico)",
+          "papel": "Trabalha nas catacumbas em estender a vida biológica."
+        }
+      ]
+    },
+    {
+      "id": "macailpein",
+      "nome": "Clã MacAilpein",
+      "especialidade": "A Guarda do Rei / Coroa",
+      "simbolo": "Um arco negro com flecha perfurando coroa de espinhos.",
+      "lema": "Camelot acima do sangue.",
+      "valores": ["Lealdade ao Rei", "Disciplina Letal", "Sacrifício"],
+      "historia": "A elite militar tática formada por William Wallace que unificou Camelot à força no passado.",
+      "base": {
+        "fortaleza": "Caer Dhu (A Fortaleza Negra) e a Capital",
+        "peculiaridadeCultural": "Na Guarda do Rei, ninguém tem sobrenome. O nome do soldado morre no alistamento."
+      },
+      "demografia": {
+        "populacao": 2000000,
+        "taxaMortalidade": "Média (Execuções internas)",
+        "dinamicaPopulacional": "Habitam a capital do reino: a elite tática, lordes juramentados e a Nova Távola."
+      },
+      "militar": {
+        "tamanhoExercito": "50.000 Guardas e a Nova Távola (Força de Elite Especial)",
+        "estiloCombate": "Ataques cirúrgicos furtivos e eliminação silenciosa de generais."
+      },
+      "economia": {
+        "renda": "Impostos brutais cobrados das outras casas.",
+        "produtos": ["Segurança central", "Execuções", "Cobradores de dívidas"]
+      },
+      "politica": {
+        "aliancas": ["Clã Gofannon (dependência bélica)", "Clã Morholt"],
+        "adversarios": ["Todas as outras casas nas sombras"],
+        "conflitosAtuais": "As ordens emitidas pelo trono tornaram-se erráticas e isolacionistas. A Coroa parece estar a preparar-se freneticamente para um evento catastrófico, recusando-se a partilhar a verdade com a Távola."
+      },
+      "personagensImportantes": [
+        {
+          "id": "william-wallace",
+          "nome": "William Wallace",
+          "titulo": "O Rei Arqueiro (Líder)",
+          "papel": "O pragmático monarca que unificou Camelot.",
+          "idade": 52,
+          "raca": "Humano",
+          "classe": "Caçador / Guerreiro",
+          "arma": "Arco do Véu (Arco longo de madeira ancestral com cristal pulsante)",
+          "poderesNativos": "Tiro Absoluto: As suas flechas ignoram a física, atravessando montanhas mágicas ou exércitos inteiros se ele tiver a intenção de matar o alvo.",
+          "comportamento": "Pragmático, frio e imponente. Fala pouco, mas cada palavra é uma sentença. A postura incrivelmente rígida esconde algo sombrio e paranoico sob a superfície, deixando a corte tensa."
+        },
+        {
+          "id": "scathach",
+          "nome": "Scáthach",
+          "titulo": "A Mãe Sombria (Tutora/Assassina)",
+          "papel": "Assassina pessoal do Rei e a carrasca impiedosa da Nova Távola.",
+          "idade": 38,
+          "raca": "Humana",
+          "classe": "Ladina / Assassina",
+          "arma": "Gae Bolg (Arco Negro de Cristal Translúcido)",
+          "poderesNativos": "Passo Dimensional: Teletransporte pelas sombras, movendo-se de uma escuridão para outra instantaneamente.",
+          "comportamento": "Letal, silenciosa e de expressões indecifráveis. Demonstra o afeto de forma ríspida, cobrando a perfeição técnica dos jogadores para garantir que sobrevivam em campo."
+        },
+        {
+          "id": "cian",
+          "nome": "Cian",
+          "titulo": "O Guarda-Costas (Capitão da Coroa)",
+          "papel": "O escudo humano de Wallace. Feroz e de lealdade cega."
+        },
+        {
+          "id": "aoife",
+          "nome": "Aoife",
+          "titulo": "A Sussurradora do Trono (Mestra de Espiões)",
+          "papel": "Controla a rede de inteligência que reporta ao Rei."
+        }
+      ]
+    }
+  ]
+}
