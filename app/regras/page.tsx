@@ -2,7 +2,8 @@ import data from "./regras.json";
 
 export default function RegrasPage() {
   return (
-    <div className="max-w-5xl mx-auto space-y-20 py-12 animate-fade-in font-serif text-gray-300">
+    <div className="w-full max-w-full md:max-w-4xl lg:max-w-5xl mx-auto space-y-12 py-6 md:py-12 animate-fade-in font-serif text-gray-300 overflow-x-hidden">
+      {" "}
       {/* HEADER PEDAGÓGICO */}
       <header className="border-b border-amber-900/40 pb-10">
         <h1 className="text-6xl font-bold text-amber-500 mb-6 tracking-tighter">
@@ -14,7 +15,6 @@ export default function RegrasPage() {
           para transcrever sua essência para o papel."
         </p>
       </header>
-
       {/* PASSO 1: CONCEITO */}
       <section className="relative p-8 bg-black/30 border border-amber-900/20">
         <div className="absolute -top-4 left-6 bg-amber-900 px-4 py-1 text-xs font-bold uppercase tracking-widest text-black">
@@ -144,7 +144,6 @@ export default function RegrasPage() {
           </p>
         </div>
       </section>
-
       {/* PASSO 3: AS CASAS (DETALHADO) */}
       <section className="space-y-10">
         <h2 className="text-3xl text-amber-600 font-bold uppercase tracking-widest">
@@ -180,7 +179,6 @@ export default function RegrasPage() {
           ))}
         </div>
       </section>
-
       {/* PASSO 4: A ARMA E O MANA */}
       <section className="border-2 border-red-900/20 p-10 bg-red-950/5 rounded-sm">
         <h2 className="text-3xl text-red-600 font-bold uppercase mb-6">
@@ -226,7 +224,6 @@ export default function RegrasPage() {
           </div>
         </div>
       </section>
-
       {/* CHECKLIST FINAL */}
       <section className="pt-10 text-center">
         <h2 className="text-2xl text-amber-500 font-bold mb-6 italic tracking-widest">

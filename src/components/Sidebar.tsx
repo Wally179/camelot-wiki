@@ -1,51 +1,79 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
+import { Menu, X, Shield, Map, Scroll, Sword, Home } from "lucide-react";
 
 export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menuItems = [
+    { name: "Início", href: "/", icon: <Home size={20} /> },
+    { name: "As 10 Casas", href: "/casas", icon: <Shield size={20} /> },
+    { name: "O Mundo", href: "/mundo", icon: <Map size={20} /> },
+    { name: "Crônicas", href: "/capitulos", icon: <Scroll size={20} /> },
+    { name: "Criar Ficha", href: "/regras", icon: <Sword size={20} /> },
+  ];
+
   return (
-    <aside className="w-64 bg-[#0a0b0e] h-screen fixed top-0 left-0 flex flex-col z-50 shadow-[5px_0_15px_rgba(0,0,0,0.5)]">
-      {/* Detalhe de Borda de Metal na Direita */}
-      <div className="absolute right-0 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-amber-900/40 to-transparent" />
+    <>
+      {/* BOTÃO MOBILE - Fica no topo direito para não cobrir títulos */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="fixed top-4 right-4 z-50 p-2 bg-amber-600 text-black rounded-md lg:hidden shadow-lg shadow-black"
+      >
+        {isOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
 
-      {/* Título Estilizado */}
-      <div className="p-8 mb-4 border-b border-amber-900/20">
-        <h2
-          className="text-3xl font-serif font-bold text-amber-600 tracking-tighter uppercase"
-          style={{ textShadow: "1px 1px 0px #000" }}
-        >
-          Camelot
-        </h2>
-        <div className="h-[1px] w-12 bg-amber-800/50 mt-1" />
-        <p className="text-[10px] text-gray-500 uppercase tracking-[0.3em] mt-2 font-bold">
-          Wiki Oficial
-        </p>
-      </div>
+      {/* OVERLAY MOBILE */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/80 z-40 lg:hidden backdrop-blur-sm"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
 
-      {/* Navegação com Efeito de "Inscrição" */}
-      <nav className="flex flex-col px-4 gap-2">
-        {[
-          { name: "Início", href: "/" },
-          { name: "O Mundo", href: "/mundo" },
-          { name: "As 10 Casas", href: "/casas" },
-          { name: "Diário de Campanha", href: "/capitulos" },
-        ].map((item) => (
-          <Link
-            key={item.name}
-            href={item.href}
-            className="group relative px-4 py-3 text-gray-400 hover:text-amber-500 transition-all font-serif italic text-lg border border-transparent hover:border-amber-900/30 hover:bg-amber-950/10 rounded-sm"
-          >
-            {/* Indicador de Seleção Celta */}
-            <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[6px] border-y-transparent border-l-[8px] border-l-amber-700 opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-1" />
-            {item.name}
-          </Link>
-        ))}
-      </nav>
+      {/* SIDEBAR ESTRUTURA */}
+      <aside
+        className={`
+          fixed top-0 left-0 h-full z-40
+          w-64 bg-[#0a0a0a] border-r border-amber-900/20
+          transform transition-transform duration-300 ease-in-out
+          ${isOpen ? "translate-x-0" : "-translate-x-full"}
+          lg:translate-x-0
+        `}
+      >
+        <div className="p-8 flex flex-col h-full">
+          <h2 className="text-amber-500 font-bold tracking-[0.2em] text-xl mb-10 border-b border-amber-900/30 pb-4">
+            CAMELOT{" "}
+            <span className="text-[10px] block text-gray-500 font-sans tracking-normal">
+              WIKI OFICIAL
+            </span>
+          </h2>
 
-      {/* Rodapé "Grimório" */}
-      <div className="mt-auto p-6 border-t border-amber-900/20 bg-black/20 text-center">
-        <p className="text-[10px] text-amber-900 font-bold uppercase tracking-widest leading-tight">
-          Protegido pelo <br /> Véu de Bruma
-        </p>
-      </div>
-    </aside>
+          <nav className="space-y-2 flex-1">
+            {menuItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-4 px-4 py-3 text-gray-400 hover:text-amber-500 hover:bg-amber-950/10 transition-all group border-l-2 border-transparent hover:border-amber-600"
+              >
+                <span className="group-hover:scale-110 transition-transform">
+                  {item.icon}
+                </span>
+                <span className="font-serif uppercase text-sm tracking-widest">
+                  {item.name}
+                </span>
+              </Link>
+            ))}
+          </nav>
+
+          {/* RODAPÉ DA SIDEBAR */}
+          <div className="pt-6 border-t border-amber-900/10 bg-black/20 text-[10px] text-gray-600 uppercase tracking-widest italic">
+            Pela Honra de Wallace
+          </div>
+        </div>
+      </aside>
+    </>
   );
 }

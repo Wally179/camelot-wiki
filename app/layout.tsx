@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Sidebar from "@/src/components/Sidebar";
-import "./globals.css";
 import Footer from "@/src/components/Footer";
+import "./globals.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,17 +18,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} flex bg-noise`}>
-        <Sidebar />
+      <body
+        className={`${inter.className} bg-noise min-h-screen text-gray-300`}
+      >
+        {/* CONTAINER PAI (Flex para Desktop, Column para Mobile) */}
+        <div className="flex flex-col lg:flex-row min-h-screen">
+          {/* SIDEBAR - z-50 para Desktop, fixed para Mobile */}
+          <Sidebar />
 
-        {/* Removi o p-10 daqui para o Footer poder respirar */}
-        <main className="flex-1 ml-64 min-h-screen flex flex-col">
-          {/* O p-10 agora fica apenas no conteúdo (children) */}
-          <div className="flex-1 p-10">{children}</div>
+          {/* ÁREA DE CONTEÚDO PRINCIPAL */}
+          {/* ml-0 no mobile, ml-64 no desktop para casar com a sidebar */}
+          <main className="flex-1 flex flex-col min-w-0 ml-0 lg:ml-64 w-full max-w-full">
+            {/* O padding agora fica no container interno para não esmagar */}
+            <div className="flex-1  md:p-10 lg:p-12 w-full max-w-full overflow-x-hidden">
+              {children}
+            </div>
 
-          {/* O Footer agora consegue encostar na Sidebar e nas bordas */}
-          <Footer />
-        </main>
+            {/* Footer agora colado na margem da Sidebar */}
+            <Footer />
+          </main>
+        </div>
       </body>
     </html>
   );
