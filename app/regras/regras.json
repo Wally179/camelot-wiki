@@ -1,0 +1,87 @@
+{
+  "casas": [
+    {
+      "id": "cador",
+      "nome": "Casa Cador",
+      "titulo": "Orgulho de Ferro",
+      "efeito": "+2 em Vontade. Uma vez por cena, soma o nível em um teste de FOR ou CON. (Foco: Disciplina)."
+    },
+    {
+      "id": "dughall",
+      "nome": "Casa Dùghall",
+      "titulo": "Olho do Avaliador",
+      "efeito": "+2 em Diplomacia. Vende itens por 75% do valor em locais aliados. (Foco: Riqueza)."
+    },
+    {
+      "id": "morholt",
+      "nome": "Casa Morholt",
+      "titulo": "Sangue Adaptável",
+      "efeito": "Resistência Veneno/Ácido 5. 1 PM para ignorar Fatigado ou Abalado. (Foco: Mutação)."
+    },
+    {
+      "id": "gofannon",
+      "nome": "Casa Gofannon",
+      "titulo": "Toque do Ferreiro",
+      "efeito": "+2 em Ofício. Itens com dobro de durabilidade e reparo custa metade do tempo. (Foco: Forja)."
+    },
+    {
+      "id": "scathach",
+      "nome": "Casa Scáthach",
+      "titulo": "Reflexo da Sombra",
+      "efeito": "+2 em Iniciativa. 1 PM para +2 Defesa contra ataques à distância. (Foco: Agilidade)."
+    },
+    {
+      "id": "ardan",
+      "nome": "Casa Ardan",
+      "titulo": "Sintonia de Ardan",
+      "efeito": "+2 em Misticismo. -1 PM no custo da Arma de Assinatura (mín. 1). (Foco: Canalização)."
+    },
+    {
+      "id": "caer",
+      "nome": "Casa Caer",
+      "titulo": "Muralha Viva",
+      "efeito": "RD +2 enquanto usar Escudo ou Armadura Pesada. (Foco: Defesa)."
+    },
+    {
+      "id": "ogham",
+      "nome": "Casa Ogham",
+      "titulo": "Passo de Bruma",
+      "efeito": "+2 em Furtividade. Ignora terreno difícil de mata/nevoeiro. (Foco: Emboscada)."
+    },
+    {
+      "id": "lir",
+      "nome": "Casa Lir",
+      "titulo": "Fôlego das Marés",
+      "efeito": "+2 em Atletismo. Dobro de fôlego e +2 Defesa contra criaturas G+. (Foco: Monstros)."
+    },
+    {
+      "id": "avalon",
+      "nome": "Casa Avalon",
+      "titulo": "Mente Ordenada",
+      "efeito": "+2 em Vontade. Rola 2x testes contra medo/confusão e escolhe o melhor. (Foco: Estratégia)."
+    }
+  ],
+  "atributos": [
+    { "nome": "FOR", "desc": "Dano físico e carga. Essencial para Batedores." },
+    {
+      "nome": "DEX",
+      "desc": "Defesa e Iniciativa. Se for baixo, você joga por último."
+    },
+    {
+      "nome": "CON",
+      "desc": "Pontos de Vida (PV). Vital para não cair no primeiro crítico."
+    },
+    {
+      "nome": "INT",
+      "desc": "Vital em T20. Dá perícias treinadas extras (Utilidade)."
+    },
+    {
+      "nome": "SAB",
+      "desc": "Percepção e Vontade. Protege contra controles mágicos."
+    },
+    {
+      "nome": "CAR",
+      "desc": "Diplomacia e habilidades de suporte ou liderança."
+    }
+  ]
+}

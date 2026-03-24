@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Sidebar from "@/src/components/Sidebar";
 import "./globals.css";
+import Footer from "@/src/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +20,14 @@ export default function RootLayout({
       <body className={`${inter.className} flex bg-noise`}>
         <Sidebar />
 
-        <main className="flex-1 ml-64 min-h-screen p-10">{children}</main>
+        {/* Removi o p-10 daqui para o Footer poder respirar */}
+        <main className="flex-1 ml-64 min-h-screen flex flex-col">
+          {/* O p-10 agora fica apenas no conteúdo (children) */}
+          <div className="flex-1 p-10">{children}</div>
+
+          {/* O Footer agora consegue encostar na Sidebar e nas bordas */}
+          <Footer />
+        </main>
       </body>
     </html>
   );
