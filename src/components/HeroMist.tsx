@@ -42,9 +42,9 @@ export default function HeroMist() {
       </div>
 
       {/* CONTEÚDO REVELADO */}
-      <div className="relative z-40 px-6">
+      <div className="relative z-40 px-6 font-serif">
         <h1
-          className={`text-6xl md:text-8xl mb-4 transition-all duration-[2500ms] font-serif ${
+          className={`text-6xl md:text-8xl mb-4 transition-all duration-[2500ms] ${
             mistCleared
               ? "text-amber-500 opacity-100 translate-y-0"
               : "text-transparent opacity-0 translate-y-10"
@@ -57,11 +57,11 @@ export default function HeroMist() {
         </h1>
 
         <div
-          className={`h-px w-64 bg-gradient-to-r from-transparent via-amber-800 to-transparent mx-auto mb-6 transition-all duration-[3000ms] delay-500 ${mistCleared ? "w-full opacity-100" : "w-0 opacity-0"}`}
+          className={`h-px w-0 bg-gradient-to-r from-transparent via-amber-800 to-transparent mx-auto mb-6 transition-all duration-[3000ms] delay-500 ${mistCleared ? "w-full md:w-64 opacity-100" : "opacity-0"}`}
         />
 
         <p
-          className={`text-xl md:text-2xl text-gray-200 max-w-2xl font-serif italic leading-relaxed transition-all duration-[2000ms] delay-1000 ${
+          className={`text-xl md:text-2xl text-gray-200 max-w-2xl italic leading-relaxed transition-all duration-[2000ms] delay-1000 ${
             mistCleared
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-5"

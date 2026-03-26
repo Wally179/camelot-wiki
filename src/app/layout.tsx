@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Sidebar from "@/src/components/Sidebar";
-import Footer from "@/src/components/Footer";
+import Sidebar from "@/components/Sidebar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,8 +29,8 @@ export default function RootLayout({
           {/* ÁREA DE CONTEÚDO PRINCIPAL */}
           {/* ml-0 no mobile, ml-64 no desktop para casar com a sidebar */}
           <main className="flex-1 flex flex-col min-w-0 ml-0 lg:ml-64 w-full max-w-full">
-            {/* O padding agora fica no container interno para não esmagar */}
-            <div className="flex-1  md:p-10 lg:p-12 w-full max-w-full overflow-x-hidden">
+            {/* O padding vertical foi reduzido para evitar clarões muito grandes no rodapé */}
+            <div className="flex-1 px-4 py-8 md:px-10 lg:px-12 w-full max-w-full overflow-x-hidden">
               {children}
             </div>
 

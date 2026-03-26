@@ -1,14 +1,14 @@
-import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function CapituloZeroPage() {
   return (
-    <div className="max-w-4xl mx-auto animate-fade-in pb-20">
-      <Link
-        href="/capitulos"
-        className="inline-flex items-center text-amber-600 hover:text-amber-400 mb-8 transition-colors text-sm font-semibold uppercase tracking-widest"
-      >
-        <span>← Voltar para o Diário</span>
-      </Link>
+    <div className="max-w-4xl mx-auto animate-fade-in">
+      <Breadcrumbs 
+        crumbs={[
+          { label: "Diário de Campanha", href: "/capitulos" },
+          { label: "O Crisol de Caer Dhu" }
+        ]} 
+      />
 
       <header className="mb-12 text-center">
         <p className="text-amber-700 font-bold uppercase tracking-[0.3em] text-sm mb-4">

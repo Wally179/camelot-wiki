@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MundoPage() {
   return (
-    <div className="max-w-4xl mx-auto animate-fade-in pb-20">
+    <div className="max-w-4xl mx-auto animate-fade-in">
       <header className="mb-14 border-b border-gray-800 pb-8 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-100 mb-4">
           O Véu de Bruma
