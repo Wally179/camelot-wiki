@@ -6,8 +6,9 @@ export default function HeroMist() {
 
   return (
     <div
-      className={`relative h-[500px] mb-12 overflow-hidden flex flex-col justify-center items-center text-center cursor-crosshair transition-all duration-[2000ms] shadow-2xl rounded-sm border-amber-900/20 border`}
+      className={`relative h-[500px] mb-12 overflow-hidden flex flex-col justify-center items-center text-center cursor-crosshair active:scale-[0.99] transition-all duration-[2000ms] shadow-2xl rounded-sm border-amber-900/20 border`}
       onMouseEnter={() => setMistCleared(true)}
+      onClick={() => setMistCleared(true)}
     >
       {/* IMAGEM DE FUNDO (Agora vai aparecer porque você moveu para /public) */}
       <div
@@ -18,11 +19,11 @@ export default function HeroMist() {
       />
 
       {/* OVERLAY DE TEXTURA E ESCURECIMENTO */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/90 via-black/40 to-black/90" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/90 via-black/40 to-black/90" />
 
       {/* 🛡️ DECORAÇÃO DE RPG (Cantoneiras) */}
       <div
-        className={`absolute inset-0 z-20 pointer-events-none transition-opacity duration-1000 ${mistCleared ? "opacity-100" : "opacity-0"}`}
+        className={`absolute inset-0 z-[2] pointer-events-none transition-opacity duration-1000 ${mistCleared ? "opacity-100" : "opacity-0"}`}
       >
         {/* Cantos decorados com CSS puro */}
         <div className="absolute top-4 left-4 w-12 h-12 border-t-4 border-l-4 border-amber-700/60 rounded-tl-lg" />
@@ -33,16 +34,19 @@ export default function HeroMist() {
 
       {/* NÉVOA (O VÉU) */}
       <div
-        className={`absolute inset-0 z-50 pointer-events-none transition-all duration-[3000ms] ${mistCleared ? "opacity-0 invisible" : "opacity-100"}`}
+        className={`absolute inset-0 z-[10] pointer-events-none transition-all duration-[3000ms] flex flex-col justify-center items-center ${mistCleared ? "opacity-0 invisible" : "opacity-100"}`}
       >
         <div className="absolute inset-0 bg-[#0f1115]/90 backdrop-blur-2xl"></div>
-        <p className="absolute inset-0 flex items-center justify-center text-amber-600/40 font-serif tracking-[0.5em] animate-pulse italic">
+        <p className="relative z-[11] text-amber-600/40 font-serif tracking-[0.5em] animate-pulse italic">
           ATRAVESSE O VÉU
         </p>
+        <span className="relative z-[11] text-[10px] text-amber-600/20 mt-4 tracking-widest uppercase lg:hidden animate-pulse">
+          (Toque para revelar)
+        </span>
       </div>
 
       {/* CONTEÚDO REVELADO */}
-      <div className="relative z-40 px-6 font-serif">
+      <div className="relative z-[5] px-6 font-serif">
         <h1
           className={`text-6xl md:text-8xl mb-4 transition-all duration-[2500ms] ${
             mistCleared

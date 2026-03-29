@@ -2,61 +2,61 @@
   "casas": [
     {
       "id": "cador",
-      "nome": "Casa Cador",
+      "nome": "Clã Cador",
       "titulo": "Orgulho de Ferro",
       "efeito": "+2 em Vontade. Uma vez por cena, soma o nível em um teste de FOR ou CON. (Foco: Disciplina)."
     },
     {
       "id": "dughall",
-      "nome": "Casa Dùghall",
+      "nome": "Clã Dùghall",
       "titulo": "Olho do Avaliador",
       "efeito": "+2 em Diplomacia. Vende itens por 75% do valor em locais aliados. (Foco: Riqueza)."
     },
     {
       "id": "morholt",
-      "nome": "Casa Morholt",
+      "nome": "Clã Morholt",
       "titulo": "Sangue Adaptável",
       "efeito": "Resistência Veneno/Ácido 5. 1 PM para ignorar Fatigado ou Abalado. (Foco: Mutação)."
     },
     {
       "id": "gofannon",
-      "nome": "Casa Gofannon",
+      "nome": "Clã Gofannon",
       "titulo": "Toque do Ferreiro",
       "efeito": "+2 em Ofício. Itens com dobro de durabilidade e reparo custa metade do tempo. (Foco: Forja)."
     },
     {
-      "id": "scathach",
-      "nome": "Casa Scáthach",
+      "id": "macailpein",
+      "nome": "Clã MacAilpein",
       "titulo": "Reflexo da Sombra",
       "efeito": "+2 em Iniciativa. 1 PM para +2 Defesa contra ataques à distância. (Foco: Agilidade)."
     },
     {
-      "id": "ardan",
-      "nome": "Casa Ardan",
+      "id": "nechtan",
+      "nome": "Clã Nechtan",
       "titulo": "Sintonia de Ardan",
       "efeito": "+2 em Misticismo. -1 PM no custo da Arma de Assinatura (mín. 1). (Foco: Canalização)."
     },
     {
-      "id": "caer",
-      "nome": "Casa Caer",
+      "id": "artos",
+      "nome": "Clã Artos",
       "titulo": "Muralha Viva",
       "efeito": "RD +2 enquanto usar Escudo ou Armadura Pesada. (Foco: Defesa)."
     },
     {
       "id": "ogham",
-      "nome": "Casa Ogham",
+      "nome": "Filhos de Ogham",
       "titulo": "Passo de Bruma",
       "efeito": "+2 em Furtividade. Ignora terreno difícil de mata/nevoeiro. (Foco: Emboscada)."
     },
     {
-      "id": "lir",
-      "nome": "Casa Lir",
+      "id": "llyr",
+      "nome": "Clã Llyr",
       "titulo": "Fôlego das Marés",
       "efeito": "+2 em Atletismo. Dobro de fôlego e +2 Defesa contra criaturas G+. (Foco: Monstros)."
     },
     {
-      "id": "avalon",
-      "nome": "Casa Avalon",
+      "id": "pwyll",
+      "nome": "Clã Pwyll",
       "titulo": "Mente Ordenada",
       "efeito": "+2 em Vontade. Rola 2x testes contra medo/confusão e escolhe o melhor. (Foco: Estratégia)."
     }

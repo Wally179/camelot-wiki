@@ -9,14 +9,14 @@ export default function HouseCard({ casa }: HouseCardProps) {
   return (
     <Link
       href={`/casas/${casa.id}`}
-      className="group block relative bg-[#08080a] border border-amber-900/10 rounded-sm hover:border-amber-600 overflow-hidden transition-all duration-500 shadow-md hover:shadow-[0_0_20px_rgba(217,119,6,0.2)] hover:-translate-y-1"
+      className="group block relative bg-[#08080a] border border-amber-900/10 rounded-sm hover:border-amber-600 active:border-amber-500 overflow-hidden transition-all duration-500 shadow-md hover:shadow-[0_0_20px_rgba(217,119,6,0.2)] hover:-translate-y-1 active:scale-[0.98]"
     >
       {/* WATERMARK DO EMBLEMA DA CASA NO FUNDO DO CARD */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 flex items-center justify-center">
 
          {/* Imagem do Brasão muito grande, cortada nas bordas e atuando como marca d'água gótica */}
          <div 
-            className="absolute -right-8 -bottom-8 w-56 h-56 bg-contain bg-center bg-no-repeat opacity-[0.04] group-hover:opacity-[0.2] transition-all duration-700 transform group-hover:scale-110 grayscale group-hover:grayscale-0 drop-shadow-2xl"
+            className="absolute -right-8 -bottom-8 w-56 h-56 bg-contain bg-center bg-no-repeat opacity-[0.4] lg:opacity-[0.04] group-hover:opacity-[0.4] transition-all duration-700 transform group-hover:scale-110 grayscale-0 lg:grayscale group-hover:grayscale-0 drop-shadow-2xl"
             style={{ backgroundImage: `url('/img/emblemas/${casa.id}SF.png')` }} 
          />
       </div>
