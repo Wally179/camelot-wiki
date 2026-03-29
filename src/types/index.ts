@@ -79,6 +79,7 @@ export interface T20Raca {
   nome: string;
   flexivel?: boolean;
   qtdFlex?: number;
+  flexValues?: number[]; // se presente, ex: [2, 2, -1]
   modificadores?: Partial<Record<AtributoKey, number>>;
   subtipos?: T20RacaSubtipo[];
   restricoes?: string[];

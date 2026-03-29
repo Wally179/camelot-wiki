@@ -70,7 +70,10 @@ export default function CharacterCalculator() {
       for(const[k,v]of Object.entries(src))r[k as AtributoKey]=(r[k as AtributoKey]??0)+(v??0);
     };
     m(raca?.modificadores); m(sub?.modificadores);
-    flex.forEach(a=>{r[a]=(r[a]??0)+1;});
+    flex.forEach((a, i) => {
+      const val = raca?.flexValues?.[i] ?? 1;
+      r[a] = (r[a] ?? 0) + val;
+    });
     m(casa?.bonus);
     return r;
   },[raca,sub,flex,casa]);
@@ -176,22 +179,33 @@ export default function CharacterCalculator() {
 
               {/* FLEX BONUS */}
               {raca?.flexivel&&(
-                <div className="border border-white/5 bg-black/40 px-4 py-3 rounded-sm">
-                  <p className="text-[10px] text-amber-600 font-bold uppercase tracking-widest mb-2">
-                    Distribuir {raca.qtdFlex} Pontos Livres ({flex.length}/{raca.qtdFlex})
+                <div className="border border-white/5 bg-black/40 px-4 py-3 rounded-sm flex flex-col gap-2.5">
+                  <p className="text-[10px] text-amber-600 font-bold uppercase tracking-widest">
+                    <span>Distribuir {raca.flexValues ? raca.flexValues.map(v=>v>0?`+${v}`:v).join(", ") : `${raca.qtdFlex} Pontos Livres`}</span>
+                    <span className="ml-2 text-amber-800">({flex.length}/{raca.qtdFlex})</span>
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {ATRIBUTOS.map(a=>{
                       const locked=raca.restricoes?.includes(a);
+                      const isPicked=flex.includes(a);
+                      const idx=flex.indexOf(a);
+                      const val=isPicked ? (raca.flexValues?.[idx] ?? 1) : null;
                       return(
                         <button key={a} onClick={()=>togFlex(a)} disabled={locked}
                           className={`text-xs px-3 py-1 border rounded-sm transition-all font-bold active:scale-95
                             ${locked?"border-gray-800 text-gray-800 cursor-not-allowed":
-                              flex.includes(a)?"border-amber-600 bg-amber-900/40 text-amber-400":
-                              "border-white/10 text-gray-400 hover:border-amber-700/60"}`}>{a}</button>
+                              isPicked?"border-amber-500 bg-amber-900/40 text-amber-400 shadow-inner":
+                              "border-white/10 text-gray-400 hover:border-amber-700/60 hover:bg-white/5"}`}>
+                          {a} {isPicked && val !== null && <span className={`ml-1 text-[10px] ${val>0?"text-blue-300":"text-red-300"}`}>({val>0?`+${val}`:val})</span>}
+                        </button>
                       );
                     })}
                   </div>
+                  {raca.flexValues && flex.length > 0 && flex.length < raca.qtdFlex! && (
+                    <p className="text-[10px] text-gray-500 italic mt-1 font-serif">
+                      ★ Clique no próximo atributo para receber <strong>{(() => { const v = raca.flexValues[flex.length]; return v > 0 ? `+${v}` : v; })()}</strong>.
+                    </p>
+                  )}
                 </div>
               )}
 

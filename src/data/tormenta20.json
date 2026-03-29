@@ -69,6 +69,14 @@
       "modificadores": { "CAR": 2 }
     },
     {
+      "id": "demon",
+      "nome": "Demon",
+      "flexivel": true,
+      "qtdFlex": 3,
+      "flexValues": [2, 2, -1],
+      "modificadores": {}
+    },
+    {
       "id": "silfide",
       "nome": "Sílfide",
       "modificadores": { "CAR": 2, "DES": 1, "FOR": -2 }
@@ -92,9 +100,9 @@
     {
       "id": "medusa",
       "nome": "Medusa",
-      "modificadores": { "DES": 1, "SAB": 2, "CAR": -1 },
+      "modificadores": {},
       "subtipos": [
-        { "id": "tradicional", "nome": "Medusa Tradicional", "modificadores": {} },
+        { "id": "tradicional", "nome": "Medusa Tradicional", "modificadores": { "DES": 1, "SAB": 2, "CAR": -1 } },
         { "id": "infernal", "nome": "Medusa Infernal", "modificadores": { "CON": 1, "CAR": -1 } },
         { "id": "draconica", "nome": "Medusa Dracônica", "modificadores": { "INT": 2, "CAR": 1 } }
       ]
