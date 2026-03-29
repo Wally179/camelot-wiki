@@ -6,10 +6,17 @@
       "id": "cador",
       "nome": "Clã Cador",
       "especialidade": "A Cavalaria Purista",
-      "bonus_sistema": { "FOR": 1, "CON": 1 },
+      "bonus_sistema": {
+        "FOR": 1,
+        "CON": 1
+      },
       "simbolo": "Um sol de prata brilhante a perfurar um crânio demoníaco.",
       "lema": "Luz pura, sangue limpo.",
-      "valores": ["Devoção", "Ordem Rigorosa", "Supremacia Humana"],
+      "valores": [
+        "Devoção",
+        "Ordem Rigorosa",
+        "Supremacia Humana"
+      ],
       "historia": "Fanáticos religiosos remanescentes de cruzadas antigas. Veem a magia não-humana como uma mácula e o Véu como um presente divino exclusivo da humanidade.",
       "base": {
         "fortaleza": "Cidadela da Alvorada",
@@ -26,11 +33,21 @@
       },
       "economia": {
         "renda": "Tributos de proteção e vasta produção agrícola.",
-        "produtos": ["Cavalos puro-sangue", "Cereais", "Armaduras banhadas a prata"]
+        "produtos": [
+          "Cavalos puro-sangue",
+          "Cereais",
+          "Armaduras banhadas a prata"
+        ]
       },
       "politica": {
-        "aliancas": ["Agem maioritariamente sozinhos"],
-        "adversarios": ["Clã Morholt", "Filhos de Ogham", "Fadas"],
+        "aliancas": [
+          "Agem maioritariamente sozinhos"
+        ],
+        "adversarios": [
+          "Clã Morholt",
+          "Filhos de Ogham",
+          "Fadas"
+        ],
         "conflitosAtuais": "Rumores apontam movimentações militares não autorizadas nas bordas das florestas. A tensão com os guetos mutantes atingiu um ponto de ruptura."
       },
       "personagensImportantes": [
@@ -79,14 +96,47 @@
       "id": "morholt",
       "nome": "Clã Morholt",
       "especialidade": "Os Mutantes",
-      "bonus_sistema": { "CON": 1, "DES": 1 },
+      "bonus_sistema": {
+        "CON": 1,
+        "DES": 1
+      },
       "simbolo": "Um corvo de três olhos com uma asa quebrada, gotejando fumo.",
       "lema": "Sobreviver para vingar.",
-      "valores": ["Lealdade à Matilha", "Resiliência", "Abraçar as Sombras"],
+      "valores": [
+        "Lealdade à Matilha",
+        "Resiliência",
+        "Abraçar as Sombras"
+      ],
       "historia": "Congregação de bastardos, meio-demônios e marcados pela magia, unidos pela sobrevivência e rejeitados por todas as outras casas.",
       "base": {
         "fortaleza": "Os Guetos de Fumaça (Caer Mór)",
         "peculiaridadeCultural": "Cremam seus mortos em piras mágicas verdes para não deixarem rastros que os Puristas possam usar."
+      },
+      "demografia": {
+        "populacao": 7500000,
+        "taxaMortalidade": "Altíssima (Fome, mutações falhas e expurgos)",
+        "dinamicaPopulacional": "É a população que mais morre, mas a que mais cresce devido ao fluxo massivo de refugiados de todas as casas."
+      },
+      "militar": {
+        "tamanhoExercito": "1.200.000 guerreiros não-regulares",
+        "estiloCombate": "Táticas de guerrilha, terror psicológico e uso das próprias mutações como armas biológicas."
+      },
+      "economia": {
+        "renda": "Trabalhos sujos e missões de alto risco.",
+        "produtos": [
+          "Mercenários",
+          "Especialistas em infiltração",
+          "Contrabando feérico"
+        ]
+      },
+      "politica": {
+        "aliancas": [
+          "A Coroa (proteção oficial em troca de missões)"
+        ],
+        "adversarios": [
+          "Clã Cador"
+        ],
+        "conflitosAtuais": "A população dos guetos cresceu inexplicavelmente nos últimos meses. Há sussurros de que estão a esconder algo — ou alguém — que poderia provocar a fúria definitiva das outras Casas."
       },
       "personagensImportantes": [
         {
@@ -134,10 +184,49 @@
       "id": "dughall",
       "nome": "Clã Dùghall",
       "especialidade": "Os Mineradores",
-      "bonus_sistema": { "CAR": 1, "INT": 1 },
+      "bonus_sistema": {
+        "CAR": 1,
+        "INT": 1
+      },
       "simbolo": "Uma picareta de ouro encravada numa montanha que sangra rubis.",
       "lema": "O peso do ouro dita a lei.",
-      "valores": ["Ambição", "Monopólio", "Pragmatismo"],
+      "valores": [
+        "Ambição",
+        "Monopólio",
+        "Pragmatismo"
+      ],
+      "historia": "Originalmente escavadores humildes, enriqueceram ao descobrir os maiores veios de Cristal de Ardan. Ergueram um império financeiro eliminando rivais.",
+      "base": {
+        "fortaleza": "Abismo de Ouro (Cofre Subterrâneo)",
+        "peculiaridadeCultural": "O status de um nobre é medido pela quantidade de quilos de joias que ele consegue vestir sem desabar no chão."
+      },
+      "demografia": {
+        "populacao": 7000000,
+        "taxaMortalidade": "Alta (Acidentes de mina e Praga de Ardan)",
+        "dinamicaPopulacional": "Repõem sua força de trabalho comprando prisioneiros de guerra ou endividados."
+      },
+      "militar": {
+        "tamanhoExercito": "800.000 mercenários",
+        "estiloCombate": "Combate pesado corpo-a-corpo usando gravidade artificial."
+      },
+      "economia": {
+        "renda": "Monopólio da extração de Cristais de Ardan brutos.",
+        "produtos": [
+          "Cristais de Ardan",
+          "Ouro",
+          "Gemas raras"
+        ]
+      },
+      "politica": {
+        "aliancas": [
+          "Clã Nechtan"
+        ],
+        "adversarios": [
+          "Filhos de Ogham",
+          "Clã Gofannon"
+        ],
+        "conflitosAtuais": "O fluxo de Cristais de Ardan tem oscilado. Há uma clara insatisfação financeira com a Coroa, e boatos de que o clã se prepara para usar a sua riqueza como uma arma política silenciosa."
+      },
       "personagensImportantes": [
         {
           "id": "dagda",
@@ -184,9 +273,49 @@
       "id": "gofannon",
       "nome": "Clã Gofannon",
       "especialidade": "Os Ferreiros",
-      "bonus_sistema": { "FOR": 1, "INT": 1 },
+      "bonus_sistema": {
+        "FOR": 1,
+        "INT": 1
+      },
       "simbolo": "Um martelo de ferro negro a bater numa bigorna em chamas azuis.",
       "lema": "O aço nunca mente.",
+      "valores": [
+        "Honra pela Forja",
+        "Progresso Tecnológico",
+        "Força"
+      ],
+      "historia": "Desenvolveram a técnica de fundir pó de Ardan ao aço, tornando-se indispensáveis militarmente para a sobrevivência do reino.",
+      "base": {
+        "fortaleza": "A Grande Fornalha (Caer Gof)",
+        "peculiaridadeCultural": "Quando um soldado morre, a sua arma é derretida e o metal misturado na próxima forja."
+      },
+      "demografia": {
+        "populacao": 5500000,
+        "taxaMortalidade": "Média (Doenças pulmonares e acidentes industriais)",
+        "dinamicaPopulacional": "População urbana espremida em cidades-fábricas industriais que nunca dormem."
+      },
+      "militar": {
+        "tamanhoExercito": "900.000 soldados blindados",
+        "estiloCombate": "Infantaria superpesada com maquinário tecnológico-mágico e lança-chamas."
+      },
+      "economia": {
+        "renda": "Venda de armamento de elite.",
+        "produtos": [
+          "Armas de Ardan",
+          "Armaduras mecanizadas",
+          "Balistas"
+        ]
+      },
+      "politica": {
+        "aliancas": [
+          "A Coroa",
+          "Clã Llyr"
+        ],
+        "adversarios": [
+          "Clã Dùghall"
+        ],
+        "conflitosAtuais": "As forjas operam a um ritmo febril, produzindo muito além da cota exigida pela Coroa. Suspeita-se de que estão a preparar-se para um grande conflito, ou a armar uma fação desconhecida."
+      },
       "personagensImportantes": [
         {
           "id": "lugh",
@@ -233,9 +362,48 @@
       "id": "llyr",
       "nome": "Clã Llyr",
       "especialidade": "Senhores da Maré",
-      "bonus_sistema": { "FOR": 1, "CON": 1 },
+      "bonus_sistema": {
+        "FOR": 1,
+        "CON": 1
+      },
       "simbolo": "Uma onda encapelada quebrando contra um tridente de osso.",
       "lema": "O mar engole os fracos.",
+      "valores": [
+        "Disciplina",
+        "Sacrifício",
+        "Resistência"
+      ],
+      "historia": "Guardiões costeiros contra leviathans e horrores abissais que cruzam o Véu oscilante.",
+      "base": {
+        "fortaleza": "Torreões de Sal",
+        "peculiaridadeCultural": "Bebem água do mar diluída em rum para nunca esquecerem a dor do oceano."
+      },
+      "demografia": {
+        "populacao": 4500000,
+        "taxaMortalidade": "Alta (Vítimas de leviathans e afogamentos)",
+        "dinamicaPopulacional": "Estagnada. Os jovens morrem rápido na patrulha naval antes de formar famílias."
+      },
+      "militar": {
+        "tamanhoExercito": "1.000.000 fuzileiros navais",
+        "estiloCombate": "Guerra anfíbia, arpões colossais e afogamento tático de frotas."
+      },
+      "economia": {
+        "renda": "Controle de portos e rotas marítimas internas.",
+        "produtos": [
+          "Pérolas abissais",
+          "Sal mágico",
+          "Carne de Leviathan"
+        ]
+      },
+      "politica": {
+        "aliancas": [
+          "Clã Gofannon"
+        ],
+        "adversarios": [
+          "Coroa (por abandono econômico)"
+        ],
+        "conflitosAtuais": "A comunicação com as bases costeiras está cada vez mais hostil. Mensageiros da Coroa são frequentemente ignorados, e a insubordinação parece estar prestes a explodir nas praias."
+      },
       "personagensImportantes": [
         {
           "id": "manannan",
@@ -282,8 +450,48 @@
       "id": "artos",
       "nome": "Clã Artos",
       "especialidade": "Domadores de Feras",
-      "bonus_sistema": { "CON": 1, "FOR": 1 },
+      "bonus_sistema": {
+        "CON": 1,
+        "FOR": 1
+      },
       "simbolo": "Uma garra de urso cravada num cristal âmbar.",
+      "lema": "A carne rasga, o instinto prevalece.",
+      "valores": [
+        "Lei do mais Forte",
+        "Liberdade Selvagem",
+        "Predação"
+      ],
+      "historia": "Bárbaros que fundem cristais em crânios de feras gigantes, criando laços mentais de guerra.",
+      "base": {
+        "fortaleza": "Os Picos de Âmbar (Acampamentos móveis)",
+        "peculiaridadeCultural": "Recém-nascidos são deixados perto dos filhotes das feras; se não forem aceites pela matilha, são descartados."
+      },
+      "demografia": {
+        "populacao": 3500000,
+        "taxaMortalidade": "Média-Alta (Devorados pelas próprias feras se mostrarem fraqueza)",
+        "dinamicaPopulacional": "Tribos nómades. Crescimento lento devido ao clima extremo das montanhas."
+      },
+      "militar": {
+        "tamanhoExercito": "500.000 domadores montados",
+        "estiloCombate": "Cavalaria monstruosa montada em ursos atrozes e lobos gigantes."
+      },
+      "economia": {
+        "renda": "Mercenários para ataques devastadores.",
+        "produtos": [
+          "Feras de guerra",
+          "Peles mágicas",
+          "Carne exótica"
+        ]
+      },
+      "politica": {
+        "aliancas": [
+          "Nenhuma permanente"
+        ],
+        "adversarios": [
+          "Clã Cador"
+        ],
+        "conflitosAtuais": "Incidentes sangrentos nas fronteiras rurais aumentaram drasticamente. Feras enormes têm sido vistas longe das montanhas, levantando dúvidas se é fome natural ou uma tática de intimidação."
+      },
       "personagensImportantes": [
         {
           "id": "artio",
@@ -330,8 +538,49 @@
       "id": "ogham",
       "nome": "Filhos de Ogham",
       "especialidade": "Os Druidas",
-      "bonus_sistema": { "DES": 1, "INT": 1 },
+      "bonus_sistema": {
+        "DES": 1,
+        "INT": 1
+      },
       "simbolo": "Uma galhada de cervo envolta em raízes espinhosas.",
+      "lema": "A terra cobra o que sangra.",
+      "valores": [
+        "Sacrifício",
+        "Tradições Antigas",
+        "Equilíbrio Natural"
+      ],
+      "historia": "Zeladores originais de Camelot antes da chegada do aço. Vivem nas florestas e veem os Cristais como o sangue da ilha.",
+      "base": {
+        "fortaleza": "Bosque das Lâminas de Folha",
+        "peculiaridadeCultural": "Não escrevem nada. A história da tribo é tatuada na pele dos anciãos."
+      },
+      "demografia": {
+        "populacao": 3000000,
+        "taxaMortalidade": "Baixa (possuem magia de cura natural)",
+        "dinamicaPopulacional": "Isolados nas florestas. Recusam estrangeiros agressivamente."
+      },
+      "militar": {
+        "tamanhoExercito": "300.000 xamãs e druidas",
+        "estiloCombate": "Uso de árvores animadas, raízes mortais e tempestades mágicas localizadas."
+      },
+      "economia": {
+        "renda": "Autossustentável (não usam moeda).",
+        "produtos": [
+          "Venenos indetectáveis",
+          "Madeira encantada",
+          "Ervas milagrosas"
+        ]
+      },
+      "politica": {
+        "aliancas": [
+          "Clã Pwyll (acordos ocultos)"
+        ],
+        "adversarios": [
+          "Clã Dùghall",
+          "Clã Gofannon"
+        ],
+        "conflitosAtuais": "Acidentes estranhos têm paralisado rotas comerciais e escavações. O silêncio da floresta esconde retaliações que muitos consideram ser o início de uma resposta druídica à corrupção da ilha."
+      },
       "personagensImportantes": [
         {
           "id": "cernunnos",
@@ -378,8 +627,48 @@
       "id": "pwyll",
       "nome": "Clã Pwyll",
       "especialidade": "Os Ilusionistas",
-      "bonus_sistema": { "INT": 1, "SAB": 1 },
+      "bonus_sistema": {
+        "INT": 1,
+        "SAB": 1
+      },
       "simbolo": "Um olho roxo semiaberto envolto numa névoa em espiral.",
+      "lema": "A verdade é o que nós pintamos.",
+      "valores": [
+        "Astúcia",
+        "Segredo",
+        "Inteligência"
+      ],
+      "historia": "Assentados na borda do Véu, desenvolveram magia de ilusão pesada para sobreviver ao contato com as Fadas de Inis Fae.",
+      "base": {
+        "fortaleza": "A Mansão dos Espelhos (Caer Pwyll)",
+        "peculiaridadeCultural": "Mudar de rosto com ilusões por motivos estéticos é tão comum quanto trocar de roupa."
+      },
+      "demografia": {
+        "populacao": 2500000,
+        "taxaMortalidade": "Baixa (evitam o confronto direto)",
+        "dinamicaPopulacional": "Foco em manter uma elite intelectual fechada em vez de grande volume de pessoas."
+      },
+      "militar": {
+        "tamanhoExercito": "100.000 magos espiões e assassinos",
+        "estiloCombate": "Quebram a sanidade do inimigo com ilusões aterradoras antes do combate físico."
+      },
+      "economia": {
+        "renda": "Comércio de informações e espionagem.",
+        "produtos": [
+          "Artefatos de ilusão",
+          "Pergaminhos de hipnose",
+          "Relíquias feéricas"
+        ]
+      },
+      "politica": {
+        "aliancas": [
+          "Filhos de Ogham"
+        ],
+        "adversarios": [
+          "Clã Cador"
+        ],
+        "conflitosAtuais": "A neblina ao redor dos seus domínios tornou-se impenetrável. Espiões relatam encontros com figuras não-humanas nas suas fronteiras, sugerindo alianças que beiram a alta traição."
+      },
       "personagensImportantes": [
         {
           "id": "rhiannon",
@@ -426,8 +715,48 @@
       "id": "nechtan",
       "nome": "Clã Nechtan",
       "especialidade": "Coveiros e Curandeiros",
-      "bonus_sistema": { "SAB": 1, "CAR": 1 },
+      "bonus_sistema": {
+        "SAB": 1,
+        "CAR": 1
+      },
       "simbolo": "Um cálice de prata derramando líquido escuro sobre uma caveira.",
+      "lema": "A morte é apenas um diagnóstico.",
+      "valores": [
+        "Conhecimento Irrestrito",
+        "Frieza",
+        "Controle"
+      ],
+      "historia": "Únicos anatomistas capazes de tratar a 'Praga de Ardan'. O controlo sobre a cura dá-lhes um poder político aterrador.",
+      "base": {
+        "fortaleza": "O Sanatório Branco",
+        "peculiaridadeCultural": "Ninguém chora em velórios. A morte é vista de forma fria como um 'erro de cálculo biológico'."
+      },
+      "demografia": {
+        "populacao": 1500000,
+        "taxaMortalidade": "Quase zero (controlam a cura)",
+        "dinamicaPopulacional": "A menor casa, composta por médicos geniais e pacientes endinheirados."
+      },
+      "militar": {
+        "tamanhoExercito": "80.000 médicos de combate e experimentos necróticos",
+        "estiloCombate": "Controle do campo através de pragas biológicas e envelhecimento acelerado."
+      },
+      "economia": {
+        "renda": "Tratamentos médicos exorbitantes e chantagem velada.",
+        "produtos": [
+          "Antídotos",
+          "Cirurgias arcanas",
+          "Tratamentos da Praga"
+        ]
+      },
+      "politica": {
+        "aliancas": [
+          "Clã Dùghall"
+        ],
+        "adversarios": [
+          "Ninguém tem coragem de desafiá-los e arriscar perder a cura."
+        ],
+        "conflitosAtuais": "Remédios essenciais estão repentinamente em falta no mercado, enquanto caravanas pesadas são vistas a entrar no Sanatório Branco à noite. Uma manobra médica está em curso, mas o objetivo é incerto."
+      },
       "personagensImportantes": [
         {
           "id": "dian-cecht",
@@ -474,8 +803,49 @@
       "id": "macailpein",
       "nome": "Clã MacAilpein",
       "especialidade": "A Guarda do Rei / Coroa",
-      "bonus_sistema": { "DES": 1, "SAB": 1 },
+      "bonus_sistema": {
+        "DES": 1,
+        "SAB": 1
+      },
       "simbolo": "Um arco negro com flecha perfurando coroa de espinhos.",
+      "lema": "Camelot acima do sangue.",
+      "valores": [
+        "Lealdade ao Rei",
+        "Disciplina Letal",
+        "Sacrifício"
+      ],
+      "historia": "A elite militar tática formada por William Wallace que unificou Camelot à força no passado.",
+      "base": {
+        "fortaleza": "Caer Dhu (A Fortaleza Negra) e a Capital",
+        "peculiaridadeCultural": "Na Guarda do Rei, ninguém tem sobrenome. O nome do soldado morre no alistamento."
+      },
+      "demografia": {
+        "populacao": 2000000,
+        "taxaMortalidade": "Média (Execuções internas)",
+        "dinamicaPopulacional": "Habitam a capital do reino: a elite tática, lordes juramentados e a Nova Távola."
+      },
+      "militar": {
+        "tamanhoExercito": "50.000 Guardas e a Nova Távola (Força de Elite Especial)",
+        "estiloCombate": "Ataques cirúrgicos furtivos e eliminação silenciosa de generais."
+      },
+      "economia": {
+        "renda": "Impostos brutais cobrados das outras casas.",
+        "produtos": [
+          "Segurança central",
+          "Execuções",
+          "Cobradores de dívidas"
+        ]
+      },
+      "politica": {
+        "aliancas": [
+          "Clã Gofannon (dependência bélica)",
+          "Clã Morholt"
+        ],
+        "adversarios": [
+          "Todas as outras casas nas sombras"
+        ],
+        "conflitosAtuais": "As ordens emitidas pelo trono tornaram-se erráticas e isolacionistas. A Coroa parece estar a preparar-se freneticamente para um evento catastrófico, recusando-se a partilhar a verdade com a Távola."
+      },
       "personagensImportantes": [
         {
           "id": "william-wallace",
