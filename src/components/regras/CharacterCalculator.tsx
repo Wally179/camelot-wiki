@@ -16,7 +16,7 @@ const TIPO_LABEL: Record<string, string> = {
   conjurador:"Conj.", hibrido:"Híb.", marcial:"Marc.", especialista:"Esp.",
 };
 const ATRIBUTOS: AtributoKey[] = ["FOR","DES","CON","INT","SAB","CAR"];
-const COST: Record<number,number> = { 8:-2,9:-1,10:0,11:1,12:2,13:3,14:5,15:7,16:10,17:13,18:16 };
+const COST: Record<number,number> = { 8:-2,9:-1,10:0,11:1,12:2,13:3,14:4,15:6,16:8,17:11,18:14 };
 const MIN_S=8, MAX_S=18, POOL=22, DEFAULT_NIVEL=3;
 
 const classNome = (c:T20Classe) => c.nome ?? CLASSE_NOMES[c.id] ?? c.id;
