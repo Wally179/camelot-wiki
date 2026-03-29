@@ -95,7 +95,8 @@
       "modificadores": { "DES": 1, "SAB": 2, "CAR": -1 },
       "subtipos": [
         { "id": "tradicional", "nome": "Medusa Tradicional", "modificadores": {} },
-        { "id": "infernal", "nome": "Medusa Infernal", "modificadores": { "CON": 1, "CAR": -1 } }
+        { "id": "infernal", "nome": "Medusa Infernal", "modificadores": { "CON": 1, "CAR": -1 } },
+        { "id": "draconica", "nome": "Medusa Dracônica", "modificadores": { "INT": 2, "CAR": 1 } }
       ]
     },
     {
