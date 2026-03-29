@@ -64,3 +64,45 @@ export interface RegrasDatabase {
   casas: CasaRegra[];
   atributos: Atributo[];
 }
+
+// Tormenta20 Calculator Types
+export type AtributoKey = "FOR" | "DES" | "CON" | "INT" | "SAB" | "CAR";
+
+export interface T20RacaSubtipo {
+  id: string;
+  nome: string;
+  modificadores?: Partial<Record<AtributoKey, number>>;
+}
+
+export interface T20Raca {
+  id: string;
+  nome: string;
+  flexivel?: boolean;
+  qtdFlex?: number;
+  modificadores?: Partial<Record<AtributoKey, number>>;
+  subtipos?: T20RacaSubtipo[];
+  restricoes?: string[];
+}
+
+export interface T20Classe {
+  id: string;
+  nome?: string;
+  tipo: "conjurador" | "hibrido" | "marcial" | "especialista";
+  atributoChave: string | string[];
+  pv: { nivel1: number; porNivel: number };
+  pmPorNivel: number[];
+}
+
+export interface T20Casa {
+  id: string;
+  nome: string;
+  bonus: Partial<Record<AtributoKey, number>>;
+  desc: string;
+}
+
+export interface T20Database {
+  racas: T20Raca[];
+  classes: T20Classe[];
+  casas: T20Casa[];
+}
+

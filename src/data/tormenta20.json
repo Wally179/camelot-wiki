@@ -1,0 +1,419 @@
+{
+  "sistema": "Tormenta20",
+
+  "atributos": {
+    "lista": ["FOR", "DES", "CON", "INT", "SAB", "CAR"],
+    "valorBase": 10,
+    "min": 8,
+    "max": 18,
+    "pontosCompra": 10,
+    "modificador": "Math.floor((valor - 10) / 2)"
+  },
+
+  "racas": [
+    {
+      "id": "humano",
+      "nome": "Humano",
+      "flexivel": true,
+      "qtdFlex": 3,
+      "modificadores": {}
+    },
+    {
+      "id": "anao",
+      "nome": "Anão",
+      "modificadores": { "CON": 2, "SAB": 1, "DES": -1 }
+    },
+    {
+      "id": "dahllan",
+      "nome": "Dahllan",
+      "modificadores": { "SAB": 2, "DES": 1, "INT": -1 }
+    },
+    {
+      "id": "elfo",
+      "nome": "Elfo",
+      "modificadores": { "INT": 2, "DES": 1, "CON": -1 }
+    },
+    {
+      "id": "goblin",
+      "nome": "Goblin",
+      "modificadores": { "DES": 2, "INT": 1, "CAR": -1 }
+    },
+    {
+      "id": "hynne",
+      "nome": "Hynne",
+      "modificadores": { "DES": 2, "CAR": 1, "FOR": -1 }
+    },
+    {
+      "id": "kliren",
+      "nome": "Kliren",
+      "modificadores": { "INT": 2, "CAR": 1, "FOR": -1 }
+    },
+    {
+      "id": "minotauro",
+      "nome": "Minotauro",
+      "modificadores": { "FOR": 2, "CON": 1, "SAB": -1 }
+    },
+    {
+      "id": "osteon",
+      "nome": "Osteon",
+      "flexivel": true,
+      "qtdFlex": 3,
+      "restricoes": ["CON"],
+      "modificadores": {}
+    },
+    {
+      "id": "sereia_tritao",
+      "nome": "Sereia/Tritão",
+      "flexivel": true,
+      "qtdFlex": 2,
+      "modificadores": { "CAR": 2 }
+    },
+    {
+      "id": "silfide",
+      "nome": "Sílfide",
+      "modificadores": { "CAR": 2, "DES": 1, "FOR": -2 }
+    },
+    {
+      "id": "trog",
+      "nome": "Trog",
+      "modificadores": { "FOR": 2, "CON": 1, "INT": -1 }
+    },
+    {
+      "id": "lefou",
+      "nome": "Lefou",
+      "flexivel": true,
+      "qtdFlex": 3,
+      "modificadores": { "CAR": -1 },
+      "subtipos": [
+        { "id": "leve", "nome": "Corrupção Leve" },
+        { "id": "pesada", "nome": "Corrupção Pesada", "modificadores": { "CON": 1 } }
+      ]
+    },
+    {
+      "id": "medusa",
+      "nome": "Medusa",
+      "modificadores": { "DES": 1, "SAB": 2, "CAR": -1 },
+      "subtipos": [
+        { "id": "tradicional", "nome": "Medusa Tradicional", "modificadores": {} },
+        { "id": "infernal", "nome": "Medusa Infernal", "modificadores": { "CON": 1, "CAR": -1 } }
+      ]
+    },
+    {
+      "id": "suraggel",
+      "nome": "Suraggel",
+      "modificadores": {},
+      "subtipos": [
+        { "id": "celestial", "nome": "Aggelus", "modificadores": { "SAB": 2, "CAR": 1, "DES": -1 } },
+        { "id": "abissal", "nome": "Sulfure", "modificadores": { "DES": 2, "INT": 1, "CAR": -1 } }
+      ]
+    },
+    {
+      "id": "golem",
+      "nome": "Golem",
+      "modificadores": { "FOR": 2, "CON": 2, "CAR": -2 },
+      "subtipos": [
+        { "id": "ferro", "nome": "Chassi de Ferro", "modificadores": { "FOR": 1 } },
+        { "id": "pedra", "nome": "Chassi de Pedra", "modificadores": { "CON": 1 } },
+        { "id": "barro", "nome": "Chassi de Barro", "modificadores": { "DES": 1 } },
+        { "id": "carne", "nome": "Chassi de Carne", "modificadores": { "INT": 1 } },
+        { "id": "mashin", "nome": "Mashin (Ameaças)", "modificadores": { "INT": 2, "CON": 1, "CAR": -1 } }
+      ]
+    },
+    {
+      "id": "qareen",
+      "nome": "Qareen",
+      "modificadores": { "CAR": 2, "INT": 1, "SAB": -1 },
+      "subtipos": [
+        { "id": "fogo", "nome": "Qareen de Fogo" },
+        { "id": "agua", "nome": "Qareen de Água" },
+        { "id": "ar", "nome": "Qareen do Ar" },
+        { "id": "terra", "nome": "Qareen da Terra" },
+        { "id": "trevas", "nome": "Qareen de Trevas" },
+        { "id": "luz", "nome": "Qareen de Luz" }
+      ]
+    },
+    {
+      "id": "kallyanach",
+      "nome": "Kallyanach (Ameaças)",
+      "flexivel": true,
+      "qtdFlex": 2,
+      "modificadores": { "CAR": 1 },
+      "subtipos": [
+        { "id": "azul", "nome": "Dragão Azul" },
+        { "id": "branco", "nome": "Dragão Branco" },
+        { "id": "marinho", "nome": "Dragão Marinho" },
+        { "id": "negro", "nome": "Dragão Negro" },
+        { "id": "verde", "nome": "Dragão Verde" },
+        { "id": "vermelho", "nome": "Dragão Vermelho" }
+      ]
+    },
+    {
+      "id": "moreau",
+      "nome": "Moreau (Ameaças)",
+      "modificadores": {},
+      "subtipos": [
+        { "id": "bovino", "nome": "Herança Bovina", "modificadores": { "FOR": 2, "CON": 1, "DES": -1 } },
+        { "id": "bufalo", "nome": "Herança de Búfalo", "modificadores": { "CON": 2, "FOR": 1, "DES": -1 } },
+        { "id": "coelho", "nome": "Herança de Coelho", "modificadores": { "DES": 2, "CAR": 1, "FOR": -1 } },
+        { "id": "coruja", "nome": "Herança de Coruja", "modificadores": { "SAB": 2, "INT": 1, "FOR": -1 } },
+        { "id": "crocodilo", "nome": "Herança de Crocodilo", "modificadores": { "CON": 2, "SAB": 1, "INT": -1 } },
+        { "id": "gato", "nome": "Herança Felina", "modificadores": { "DES": 2, "CAR": 1, "CON": -1 } },
+        { "id": "lobo", "nome": "Herança Lupina", "modificadores": { "SAB": 2, "CON": 1, "INT": -1 } },
+        { "id": "morcego", "nome": "Herança de Morcego", "modificadores": { "DES": 2, "SAB": 1, "CON": -1 } },
+        { "id": "raposa", "nome": "Herança de Raposa", "modificadores": { "INT": 2, "DES": 1, "FOR": -1 } },
+        { "id": "serpente", "nome": "Herança de Serpente", "modificadores": { "DES": 2, "INT": 1, "CAR": -1 } },
+        { "id": "urso", "nome": "Herança de Urso", "modificadores": { "FOR": 2, "CON": 1, "DES": -1 } }
+      ]
+    },
+    {
+      "id": "meio-gigante",
+      "nome": "Meio-Gigante (Ruff Ghanor)",
+      "modificadores": { "FOR": 2, "CON": 2, "DES": -1, "INT": -1 }
+    },
+    {
+      "id": "orc",
+      "nome": "Orc (Ameaças)",
+      "modificadores": { "FOR": 2, "CON": 1, "INT": -1 }
+    },
+    {
+      "id": "centauro",
+      "nome": "Centauro (Ameaças)",
+      "modificadores": { "FOR": 2, "SAB": 1, "INT": -1 }
+    },
+    {
+      "id": "finntroll",
+      "nome": "Finntroll (Ameaças)",
+      "modificadores": { "INT": 2, "CON": 1, "FOR": -1 }
+    },
+    {
+      "id": "nezumi",
+      "nome": "Nezumi (Ameaças)",
+      "modificadores": { "DES": 2, "CON": 1, "CAR": -1 }
+    },
+    {
+      "id": "tengu",
+      "nome": "Tengu (Ameaças)",
+      "modificadores": { "DES": 2, "SAB": 1, "FOR": -1 }
+    },
+    {
+      "id": "kappa",
+      "nome": "Kappa (Ameaças)",
+      "modificadores": { "INT": 2, "SAB": 1, "DES": -1 }
+    },
+    {
+      "id": "henge",
+      "nome": "Henge (Ameaças)",
+      "flexivel": true,
+      "qtdFlex": 2,
+      "modificadores": { "SAB": 1 }
+    },
+    {
+      "id": "kaijin",
+      "nome": "Kaijin (Ameaças)",
+      "flexivel": true,
+      "qtdFlex": 1,
+      "modificadores": { "CON": 2, "CAR": -1 }
+    },
+    {
+      "id": "bugbear",
+      "nome": "Bugbear (Ameaças)",
+      "modificadores": { "FOR": 2, "DES": 1, "CAR": -1 }
+    },
+    {
+      "id": "ceratops",
+      "nome": "Ceratops (Ameaças)",
+      "modificadores": { "FOR": 2, "CON": 1, "INT": -1 }
+    },
+    {
+      "id": "ptero",
+      "nome": "Ptero (Ameaças)",
+      "modificadores": { "DES": 2, "INT": 1, "CAR": -1 }
+    },
+    {
+      "id": "velocis",
+      "nome": "Velocis (Ameaças)",
+      "modificadores": { "DES": 2, "CON": 1, "INT": -1 }
+    },
+    {
+      "id": "gnoll",
+      "nome": "Gnoll (Ameaças)",
+      "modificadores": { "CON": 2, "SAB": 1, "CAR": -1 }
+    }
+  ],
+
+  "regrasRaciais": {
+    "modificadorFinal": "base + racial + subtipo + outros"
+  },
+
+  "classes": [
+    {
+      "id": "arcanista",
+      "tipo": "conjurador",
+      "atributoChave": ["INT", "CAR", "SAB"],
+      "pv": { "nivel1": 8, "porNivel": 2 },
+      "pmPorNivel": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 96, 102, 108, 114, 120]
+    },
+    {
+      "id": "barbaro",
+      "tipo": "marcial",
+      "atributoChave": "FOR",
+      "pv": { "nivel1": 24, "porNivel": 6 },
+      "pmPorNivel": [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60]
+    },
+    {
+      "id": "bardo",
+      "tipo": "hibrido",
+      "atributoChave": "CAR",
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    },
+    {
+      "id": "bucaneiro",
+      "tipo": "marcial",
+      "atributoChave": ["DES", "CAR"],
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60]
+    },
+    {
+      "id": "cacador",
+      "tipo": "marcial",
+      "atributoChave": "SAB",
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    },
+    {
+      "id": "cavaleiro",
+      "tipo": "marcial",
+      "atributoChave": ["FOR", "CAR"],
+      "pv": { "nivel1": 20, "porNivel": 5 },
+      "pmPorNivel": [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60]
+    },
+    {
+      "id": "clerigo",
+      "tipo": "conjurador",
+      "atributoChave": "SAB",
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
+    },
+    {
+      "id": "druida",
+      "tipo": "conjurador",
+      "atributoChave": "SAB",
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
+    },
+    {
+      "id": "guerreiro",
+      "tipo": "marcial",
+      "atributoChave": ["FOR", "DES"],
+      "pv": { "nivel1": 20, "porNivel": 5 },
+      "pmPorNivel": [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60]
+    },
+    {
+      "id": "inventor",
+      "tipo": "especialista",
+      "atributoChave": "INT",
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    },
+    {
+      "id": "ladino",
+      "tipo": "especialista",
+      "atributoChave": ["DES", "INT"],
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    },
+    {
+      "id": "lutador",
+      "tipo": "marcial",
+      "atributoChave": ["FOR", "CON"],
+      "pv": { "nivel1": 20, "porNivel": 5 },
+      "pmPorNivel": [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60]
+    },
+    {
+      "id": "nobre",
+      "tipo": "especialista",
+      "atributoChave": "CAR",
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    },
+    {
+      "id": "paladino",
+      "tipo": "hibrido",
+      "atributoChave": "CAR",
+      "pv": { "nivel1": 20, "porNivel": 5 },
+      "pmPorNivel": [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60]
+    },
+    {
+      "id": "mistico",
+      "nome": "Místico (Dragão Brasil)",
+      "tipo": "hibrido",
+      "atributoChave": ["CON", "SAB"],
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    },
+    {
+      "id": "samurai",
+      "nome": "Samurai (Dragão Brasil)",
+      "tipo": "marcial",
+      "atributoChave": ["FOR", "DES", "SAB"],
+      "pv": { "nivel1": 20, "porNivel": 5 },
+      "pmPorNivel": [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60]
+    },
+    {
+      "id": "ninja",
+      "nome": "Ninja (Dragão Brasil)",
+      "tipo": "especialista",
+      "atributoChave": ["DES", "INT"],
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    },
+    {
+      "id": "bandeirante",
+      "nome": "Bandeirante (Dragão Brasil)",
+      "tipo": "especialista",
+      "atributoChave": "SAB",
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    },
+    {
+      "id": "inquisidor",
+      "nome": "Inquisidor (Dragão Brasil)",
+      "tipo": "hibrido",
+      "atributoChave": "SAB",
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    },
+    {
+      "id": "miragem",
+      "nome": "Miragem (Dragão Brasil)",
+      "tipo": "hibrido",
+      "atributoChave": ["DES", "CAR"],
+      "pv": { "nivel1": 16, "porNivel": 4 },
+      "pmPorNivel": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80]
+    }
+  ],
+
+  "calculo": {
+    "atributoFinal": "base + racial + subtipo + casa + outros",
+    "modificador": "Math.floor((valor - 10) / 2)",
+    "pvTotal": "classe.pv.nivel1 + (nivel - 1) * classe.pv.porNivel + (mod(CON) * nivel)",
+    "pmTotal": "classe.pmPorNivel[nivel - 1]",
+    "cdMagia": "10 + nivel + mod(atributoChave)",
+    "defesa": "10 + mod(DES) + bonus",
+    "pmMaxPorMagia": "nivel"
+  },
+
+  "casas": [
+    { "id": "cador",      "nome": "Clã Cador",        "bonus": { "FOR": 1, "CON": 1 },        "desc": "Org. de Ferro — cavalaria blindada" },
+    { "id": "dughall",    "nome": "Clã Dùghall",      "bonus": { "CAR": 1, "INT": 1 },        "desc": "Olho do Avaliador — diplomacia e comércio" },
+    { "id": "morholt",    "nome": "Clã Morholt",      "bonus": { "CON": 1, "DES": 1 },        "desc": "Sangue Adaptável — mutação e resiliência" },
+    { "id": "gofannon",   "nome": "Clã Gofannon",     "bonus": { "FOR": 1, "INT": 1 },        "desc": "Toque do Ferreiro — forja e força bruta" },
+    { "id": "macailpein", "nome": "Clã MacAilpein",   "bonus": { "DES": 1, "SAB": 1 },        "desc": "Reflexo da Sombra — agilidade e percepção" },
+    { "id": "nechtan",    "nome": "Clã Nechtan",      "bonus": { "SAB": 1, "CAR": 1 },        "desc": "Sintonia de Ardan — canalização mística" },
+    { "id": "artos",      "nome": "Clã Artos",        "bonus": { "CON": 1, "FOR": 1 },        "desc": "Muralha Viva — resistência e defesa" },
+    { "id": "ogham",      "nome": "Filhos de Ogham",  "bonus": { "DES": 1, "INT": 1 },        "desc": "Passo de Bruma — furtividade e natureza" },
+    { "id": "llyr",       "nome": "Clã Llyr",         "bonus": { "FOR": 1, "CON": 1 },        "desc": "Fôlego das Marés — força e monstros" },
+    { "id": "pwyll",      "nome": "Clã Pwyll",        "bonus": { "INT": 1, "SAB": 1 },        "desc": "Mente Ordenada — estratégia e arcano" }
+  ]
+}

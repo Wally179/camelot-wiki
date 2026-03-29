@@ -3,6 +3,7 @@ import { RegrasDatabase } from "@/types";
 import RegrasHero from "@/components/regras/RegrasHero";
 import AttributeTable from "@/components/regras/AttributeTable";
 import HouseTraitGrid from "@/components/regras/HouseTraitGrid";
+import CharacterCalculator from "@/components/regras/CharacterCalculator";
 
 const data = dataJson as RegrasDatabase;
 
@@ -80,6 +81,19 @@ export default function RegrasPage() {
       </section>
 
       <AttributeTable atributos={data.atributos} />
+
+      {/* PASSO 2: CALCULADORA DE ATRIBUTOS */}
+      <section className="border border-amber-900/20 bg-black/20 rounded-sm px-8 py-6 flex flex-wrap items-center justify-between gap-6">
+        <div>
+          <div className="text-[10px] uppercase tracking-widest text-amber-700 font-bold mb-1">Passo 02</div>
+          <h2 className="text-2xl font-bold text-amber-500 font-serif">Distribua seus Atributos</h2>
+          <p className="text-sm text-gray-500 mt-1.5 max-w-md">
+            Use <strong className="text-amber-500">22 pontos</strong> para distribuir entre os 6 atributos. Cada atributo começa em 10 — baixar abaixo de 10 (mín. 8) devolve pontos.
+            Bônus de raça e classe são aplicados depois.
+          </p>
+        </div>
+        <CharacterCalculator />
+      </section>
 
       <HouseTraitGrid casas={data.casas} />
 
