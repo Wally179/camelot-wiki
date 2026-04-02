@@ -1,8 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useState, type ComponentType } from "react";
-
-const STORAGE_KEY = "camelot-nova-tavola-nivel";
+import { useEffect, useState, type ComponentType } from "react";
+import { REVEAL_NOVA_TAVOLA_POWERS } from "@/config/campaign";
 
 function MistOverlay({ active }: { active: boolean }) {
   if (!active) return null;
@@ -34,41 +33,13 @@ function MistOverlay({ active }: { active: boolean }) {
 }
 
 export default function NovaTavolaPowersVault() {
-  const [level, setLevel] = useState(3);
-  const [hydrated, setHydrated] = useState(false);
   const [PowersList, setPowersList] = useState<ComponentType | null>(null);
   const [loadError, setLoadError] = useState(false);
 
-  const unlocked = level >= 4;
+  const reveal = REVEAL_NOVA_TAVOLA_POWERS;
 
   useEffect(() => {
-    setHydrated(true);
-    try {
-      const raw = sessionStorage.getItem(STORAGE_KEY);
-      if (raw !== null) {
-        const n = parseInt(raw, 10);
-        if (!Number.isNaN(n) && n >= 1 && n <= 20) setLevel(n);
-      }
-    } catch {
-      /* ignore */
-    }
-  }, []);
-
-  const persistLevel = useCallback((n: number) => {
-    try {
-      sessionStorage.setItem(STORAGE_KEY, String(n));
-    } catch {
-      /* ignore */
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!hydrated) return;
-    persistLevel(level);
-  }, [hydrated, level, persistLevel]);
-
-  useEffect(() => {
-    if (!unlocked) {
+    if (!reveal) {
       setPowersList(null);
       setLoadError(false);
       return;
@@ -85,60 +56,60 @@ export default function NovaTavolaPowersVault() {
     return () => {
       cancelled = true;
     };
-  }, [unlocked]);
+  }, [reveal]);
 
   const List = PowersList;
+  const showMist = !reveal || (reveal && !List);
 
   return (
     <section className="space-y-6">
       <div className="border-b border-amber-900/30 pb-6">
-        <h2 className="text-3xl font-bold text-gray-100 mb-2">Lista de Poderes da Distinção</h2>
+        <h2 className="text-3xl font-bold text-gray-100 mb-2">
+          Lista de Poderes da Distinção
+        </h2>
         <p className="text-gray-500 text-sm">
-          Ao subir de nível, caso atenda aos pré-requisitos, você pode escolher um dos poderes no
-          lugar de um poder de classe. O treinamento completo permanece velado até o marco de
-          progressão adequado.
+          {reveal ? (
+            <>
+              Ao subir de nível, caso atenda aos pré-requisitos, você pode
+              escolher um dos poderes no lugar de um poder de classe.
+            </>
+          ) : (
+            <>
+              A lista detalhada dos poderes permanece indisponível neste
+              registro público até liberação do mestre de campanha.
+            </>
+          )}
         </p>
       </div>
 
       <div className="relative rounded-sm border border-amber-900/25 bg-black/20 min-h-[280px] md:min-h-[320px]">
-        <MistOverlay active={!unlocked || !List} />
+        <MistOverlay active={showMist} />
 
-        <div className="relative z-30 p-6 md:p-8">
-          <div className="max-w-md mx-auto text-center space-y-4">
-            <label htmlFor="nova-tavola-nivel" className="block text-[11px] uppercase tracking-widest text-amber-700 font-bold">
-              Nível do personagem
-            </label>
-            <input
-              id="nova-tavola-nivel"
-              type="range"
-              min={1}
-              max={20}
-              value={level}
-              onChange={(e) => setLevel(Number(e.target.value))}
-              className="w-full h-2 rounded-full appearance-none bg-amber-950/80 accent-amber-600 cursor-pointer"
-            />
-            <p className="text-2xl font-bold text-amber-500 tabular-nums">{level}</p>
-            <p className="text-xs text-gray-500 leading-relaxed">
-              {unlocked ? (
-                <span className="text-amber-600/90">A névoa se abre — a lista é carregada neste dispositivo.</span>
-              ) : (
-                <>
-                  Suba o nível para <strong className="text-gray-400">4 ou mais</strong> para dissipar o véu sobre os
-                  poderes (marco típico do primeiro Poder de Distinção).
-                </>
-              )}
+        {!reveal && (
+          <div className="relative z-30 flex min-h-[280px] md:min-h-[320px] items-center justify-center px-6 py-12">
+            <p className="max-w-md text-center text-sm leading-relaxed text-amber-800/90 md:text-amber-700/80">
+              O véu não se dissipa.
             </p>
-          </div>
-        </div>
-
-        {loadError && unlocked && (
-          <div className="relative z-30 px-6 pb-6 text-center text-sm text-red-400">
-            Não foi possível carregar a lista. Atualize a página e tente de novo.
           </div>
         )}
 
-        {unlocked && List && (
-          <div className="relative z-10 px-6 pb-8 md:px-8 pt-2">
+        {reveal && !List && !loadError && (
+          <div className="relative z-30 flex min-h-[200px] items-center justify-center px-6">
+            <p className="text-xs uppercase tracking-widest text-amber-900/50">
+              Carregando lista…
+            </p>
+          </div>
+        )}
+
+        {reveal && loadError && (
+          <div className="relative z-30 px-6 pb-6 pt-8 text-center text-sm text-red-400">
+            Não foi possível carregar a lista. Atualize a página e tente de
+            novo.
+          </div>
+        )}
+
+        {reveal && List && (
+          <div className="relative z-10 px-6 pb-8 md:px-8 pt-8">
             <List />
           </div>
         )}

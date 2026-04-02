@@ -115,8 +115,8 @@ export default function RegrasPage() {
         </p>
         <p className="text-sm text-gray-500 mb-8 max-w-3xl">
           Não há limite máximo de quantos poderes da Distinção você pode ter ao longo da campanha; o
-          primeiro costuma entrar a partir do nível 4. Os detalhes de admissão em Caer Dhu, a
-          mecânica completa e a lista de todos os poderes estão na página dedicada.
+          primeiro costuma entrar a partir do nível 4. Admissão em Caer Dhu e a mecânica estão na
+          página dedicada; a lista pública de poderes só aparece quando o mestre liberar no site.
         </p>
         <Link
           href="/regras/nova-tavola"
