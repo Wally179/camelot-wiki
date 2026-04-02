@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Shield, Map, Scroll, Sword, Home } from "lucide-react";
+import { Menu, X, Shield, Map, Scroll, Sword, Home, Table2 } from "lucide-react";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +13,7 @@ export default function Sidebar() {
     { name: "As 10 Casas", href: "/casas", icon: <Shield size={20} /> },
     { name: "O Mundo", href: "/mundo", icon: <Map size={20} /> },
     { name: "Crônicas", href: "/capitulos", icon: <Scroll size={20} /> },
+    { name: "Nova Távola", href: "/regras/nova-tavola", icon: <Table2 size={20} /> },
     { name: "Criar Ficha", href: "/regras", icon: <Sword size={20} /> },
   ];
 
@@ -52,7 +53,11 @@ export default function Sidebar() {
 
           <nav className="space-y-2 flex-1">
             {menuItems.map((item) => {
-              const isActive = pathname === item.href || (pathname?.startsWith(item.href) && item.href !== "/");
+              const isActive =
+                item.href === "/regras"
+                  ? pathname === "/regras" || pathname === "/regras/"
+                  : pathname === item.href ||
+                    (pathname?.startsWith(`${item.href}/`) && item.href !== "/");
 
               return (
                 <Link

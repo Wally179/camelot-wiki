@@ -1,3 +1,4 @@
+import Link from "next/link";
 import dataJson from "@/data/regras.json";
 import { RegrasDatabase } from "@/types";
 import RegrasHero from "@/components/regras/RegrasHero";
@@ -96,6 +97,34 @@ export default function RegrasPage() {
       </section>
 
       <HouseTraitGrid casas={data.casas} />
+
+      {/* PASSO 03: PODERES DA DISTINÇÃO */}
+      <section className="relative p-8 md:p-10 bg-black/30 border border-amber-900/20 rounded-sm">
+        <div className="absolute -top-4 left-6 bg-amber-900 px-4 py-1 text-xs font-bold uppercase tracking-widest text-black">
+          Passo 03: Poderes da Distinção
+        </div>
+        <h2 className="text-2xl md:text-3xl font-bold text-amber-600 mb-4 pr-2">
+          A Nova Távola e os seus poderes
+        </h2>
+        <p className="text-gray-400 leading-relaxed mb-2 max-w-3xl">
+          Além dos poderes da sua classe, quem pertence à Nova Távola pode escolher{" "}
+          <strong className="text-gray-300">poderes de Distinção</strong> ao subir de nível: em
+          geral, quando ganharia um <strong className="text-gray-300">Poder de Classe</strong>, você
+          pode abrir mão dele para pegar um poder da lista da Distinção — se cumprir admissão e
+          pré-requisitos (nível, perícias, outros poderes, etc.).
+        </p>
+        <p className="text-sm text-gray-500 mb-8 max-w-3xl">
+          Não há limite máximo de quantos poderes da Distinção você pode ter ao longo da campanha; o
+          primeiro costuma entrar a partir do nível 4. Os detalhes de admissão em Caer Dhu, a
+          mecânica completa e a lista de todos os poderes estão na página dedicada.
+        </p>
+        <Link
+          href="/regras/nova-tavola"
+          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-amber-600 text-black text-sm font-bold uppercase tracking-widest rounded-sm shadow-lg shadow-black/40 hover:bg-amber-500 hover:shadow-amber-900/20 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
+        >
+          Abrir guia da Nova Távola
+        </Link>
+      </section>
 
       {/* PASSO 4: A ARMA E O MANA */}
       <section className="border-2 border-red-900/20 p-10 bg-red-950/5 rounded-sm">
